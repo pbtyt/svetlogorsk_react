@@ -13,9 +13,6 @@
 }
 
 .card{
-	width: 500px;
-	height: 300px;
-
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
@@ -36,15 +33,16 @@
 .cardSide{
 	backface-visibility: hidden;
 	transition: all .8s ease;
-	position: absolute;
-	top: 0;
-	left: 0;
+	position: relative;
 }
 
 .cardSide.back{
 	transform: rotateY(-180deg);
 	font-size: 20px;
-	position: relative;
+
+	position: absolute;
+	top: 0;
+	left: 0;
 
 	display: flex;
 	flex-direction: column;
@@ -59,7 +57,7 @@
 
 .cardSide.back.activate{
 	transform: rotateY(0deg);
-	flex-grow: 1;
+	height: 100%;
 }
 
 .cardSide.back.activate button{
@@ -78,4 +76,25 @@
 .cardMoreInfo:hover{
 	transition: all 300ms ease;
 	background: #a19d9d;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+	.cardImg{
+		width: 300px;
+		height: 140px;
+	}
+
+	.cardTitle{
+		font-size: 12px;
+	}
+
+	.cardSide.back p{
+		font-size: 8px;
+	}
+
+	.cardMoreInfo{
+		padding: 4px 10px;
+		font-size: 8px;
+	}
 }

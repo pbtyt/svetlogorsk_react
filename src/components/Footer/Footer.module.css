@@ -16,7 +16,22 @@
 	font-weight: 600;
 }
 
+.authors h3{
+	margin-bottom: 10px;
+}
+
 .blockFooterWrapper{
 	display: flex;
 	flex-grow: 1;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+	.authors h4{
+		font-size: 12px;
+	}
+
+	.authors h3{
+		font-size: 14px;
+		margin-bottom: 0px;
+	}
 }

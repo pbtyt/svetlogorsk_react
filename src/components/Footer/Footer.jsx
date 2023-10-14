@@ -6,7 +6,7 @@ const Footer = () => {
         <div className={styles.blockFooterWrapper}>
             <div style={{flexGrow: "1"}} ></div>
                 <div className={styles.authors}>
-                    <h3 style={{marginBottom: "10px"}}>Авторы</h3>
+                    <h3>Авторы</h3>
                     <h4>Бобченок Никита</h4>
                     <h4>Полуян Глеб</h4>
                     <h4>Королюк Максим</h4>
