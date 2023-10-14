@@ -1,0 +1,52 @@
+.header{
+	width: 100%;
+	height: 100%;
+
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	font-weight: 700;
+	color: white;
+}
+
+.headerVideo{
+	z-index: -2;
+	position: absolute;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.headerTitle{	
+	font-size: 56px;
+}
+
+.headerSubtitle{
+	font-size: 16px;
+	letter-spacing: 3.2px;
+	text-transform: uppercase;
+}
+
+.container{
+	margin: 0 auto;
+	padding-bottom: 24px;
+}
+
+.mainHeader{
+	font-weight: 700;
+	text-align: center;
+	font-size: 46px;
+
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+
+.mainCardsWrapper{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 45px;
+}

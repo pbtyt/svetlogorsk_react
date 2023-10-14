@@ -1,0 +1,22 @@
+.footer{
+	margin-top: 40px;
+	background: rgba(150, 147, 147, .15);
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+.authors{
+	display: flex;
+	gap: 5px;
+	flex-direction: column;
+}
+
+.authors h4{
+	font-weight: 600;
+}
+
+.blockFooterWrapper{
+	display: flex;
+	flex-grow: 1;
+}

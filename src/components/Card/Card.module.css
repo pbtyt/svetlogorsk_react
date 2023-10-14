@@ -1,0 +1,81 @@
+.cardWrapper{
+	padding: 20px;
+	box-shadow: 0px 10px 40px 0px rgba(126, 155, 189, 0.35);
+
+	transition: all 300ms ease;
+}
+
+.cardWrapper:hover{
+	transition: all 300ms ease;
+
+	transform: scale(1.1);
+	box-shadow: 0px 10px 40px 0px rgba(126, 155, 189, 0.65);
+}
+
+.card{
+	width: 500px;
+	height: 300px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	position: relative;
+	perspective: 150rem;
+}
+
+.cardTitle{
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.cardImg{
+	width: 500px;
+	height: 240px;
+}
+
+.cardSide{
+	backface-visibility: hidden;
+	transition: all .8s ease;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.cardSide.back{
+	transform: rotateY(-180deg);
+	font-size: 20px;
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	/* gap: 55px; */
+	align-items: center;
+	padding: 10px;
+}
+
+.cardSide.front.activate{
+	transform: rotateY(180deg);
+}
+
+.cardSide.back.activate{
+	transform: rotateY(0deg);
+	flex-grow: 1;
+}
+
+.cardSide.back.activate button{
+	position: absolute;
+	bottom: 15px;
+}
+
+.cardMoreInfo{
+	padding: 8px 20px;
+	border: 0px;
+	background: lightgray;
+	font-size: 15px;
+	transition: all 300ms ease;
+}
+
+.cardMoreInfo:hover{
+	transition: all 300ms ease;
+	background: #a19d9d;
+}
