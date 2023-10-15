@@ -12,13 +12,16 @@
 	flex-direction: column;
 }
 
-.authors h4{
-	font-weight: 600;
-}
-
 .authors h3{
 	margin-bottom: 10px;
+	font-size: 13px;
 }
+
+.authors h4{
+	font-weight: 600;
+	font-size: 11px;
+}
+
 
 .blockFooterWrapper{
 	display: flex;
@@ -26,12 +29,16 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px){
+	.footer{
+		margin-top: 10px;
+		padding: 5px;
+	}
 	.authors h4{
-		font-size: 12px;
+		font-size: 10px;
 	}
 
 	.authors h3{
-		font-size: 14px;
+		font-size: 12px;
 		margin-bottom: 0px;
 	}
 }

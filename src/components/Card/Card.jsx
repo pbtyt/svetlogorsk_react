@@ -21,7 +21,6 @@ const Card = ({ data }) => {
                     {data.desc}
                 </p>
 
-                <button className={styles.cardMoreInfo}>Подробнее...</button>
             </div>
         </div>
     </div>
