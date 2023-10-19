@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './InfoPage.module.css'
 
+import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 
 import moreInfo from '../../data/moreInfo.json'
@@ -17,11 +18,11 @@ const InfoPage = () => {
                 <h1 className={styles.headerTitle}> {data.title} </h1>
                 <p className={styles.headerSubtitle}>Память народа </p>
 
-                <button>
-                    <a href="../index.html">
+                <Link to="/svetlogorsk_react">
+                    <button>
                         На главную...
-                    </a>
-                </button>
+                    </button>
+                </Link>
             </div>
         </div>
 

@@ -42,11 +42,15 @@
 	text-align: center;
 }
 
-.pageWrapper button{
+.pageWrapper a{
 	text-decoration: none;
 	position:absolute;
 	bottom: 40px;
 	font-family: 'Montserrat', sans-serif;
+	
+}
+
+.pageWrapper a button{
 	padding: 10px 25px;
 	font-size: 18px;
 	border-radius: 10px;
@@ -54,11 +58,6 @@
 	background: transparent;
 	color: white;
 	font-weight: 500;
-}
-
-.pageWrapper button a{
-	text-decoration: none;
-	color: lightgray;
 }
 
 .main{
@@ -87,11 +86,12 @@
 		font-size: 13px;
 	}
 
-	.pageWrapper button{
+	.pageWrapper a button{
 		border-radius: 5px;
 		border-width: .99px;
 		font-size: 10px;
-		padding: 5px 10px;	
+		padding: 5px 10px;
+		font-weight: 400;
 	}
 	
 	.main{
@@ -103,7 +103,7 @@
 	}
 
 	.mainInfo{
-		padding: 10px;
+		padding: 15px;
 		font-size: 15px;
 	}
 }

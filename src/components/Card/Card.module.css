@@ -60,7 +60,7 @@
 	height: 100%;
 }
 
-.cardSide.back.activate button{
+.cardSide.back.activate a{
 	position: absolute;
 	bottom: 15px;
 }

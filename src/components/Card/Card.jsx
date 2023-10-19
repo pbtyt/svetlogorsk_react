@@ -22,9 +22,12 @@ const Card = ({ data }) => {
                 <p>
                     {data.desc}
                 </p>
-                <button className={styles.cardMoreInfo}>
-                    <Link to={`${data.id}`}>More</Link>
-                </button>
+
+                <Link to={`${data.id}`}>
+                    <button className={styles.cardMoreInfo}>
+                        More  
+                    </button>
+                </Link>
             </div>
         </div>
     </div>
