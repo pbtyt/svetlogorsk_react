@@ -13,25 +13,32 @@ const MainPage = () => {
             <video loop autoPlay muted className={styles.headerVideo}>
                 <source src={videoBG} type="video/mp4"/>
             </video>
-            <h1 className={styles.headerTitle}> Город СВЕТЛОГОРСК </h1>
-            <p className={styles.headerSubtitle}>Город с богатой историей </p>
+            <h1 className={styles.headerTitle}> СВЕТЛАГОРСК </h1>
+            <p className={styles.headerSubtitle}>Горад з багатай гісторыяй </p>
         </header>
 
         <main className={styles.main}>
             <div className={styles.container}>
                 <h2 className={styles.mainHeader}>
-                    Памятные места нашего города
+                Памятныя мясціны нашага горада
                 </h2>
 
                 <div className={styles.mainCardsWrapper}>
                     {
-                        allData.map(data => <Card data={data} key={data.id}/> )
+                        allData.slice(0, 3).map(data => <Card data={data} key={data.id}/> )
+                    }
+                </div>
+
+                <h2 className={styles.mainHeader}>
+                    Дарога памяці - дарога славы
+                </h2>
+                <div className={styles.mainCardsWrapper}>
+                    {
+                        allData.slice(3).map(data => <Card data={data} key={data.id}/> )
                     }
                 </div>
             </div>
         </main>
-
-        <Footer/>
     </>
   )
 }

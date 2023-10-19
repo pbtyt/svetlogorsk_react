@@ -1,8 +1,10 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 import styles from './Card.module.css'
 
 import image from '/bag.jpg'
+
 
 const Card = ({ data }) => {
     const [isActivate, setIsActivate] = useState(false)
@@ -20,7 +22,9 @@ const Card = ({ data }) => {
                 <p>
                     {data.desc}
                 </p>
-
+                <button className={styles.cardMoreInfo}>
+                    <Link to={`${data.id}`}>More</Link>
+                </button>
             </div>
         </div>
     </div>
