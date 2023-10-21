@@ -1,7 +1,6 @@
 import styles from './MainPage.module.css'
 import videoBG from '/mainVideo.mp4'
 
-import Footer from '../../components/Footer/Footer'
 import Card from '../../components/Card/Card'
 
 import allData from '../../data/data.json'

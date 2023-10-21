@@ -68,14 +68,16 @@
 .cardMoreInfo{
 	padding: 8px 20px;
 	border: 0px;
-	background: lightgray;
+	border-radius: 5px;
+	background: #cedbd3;
+	
 	font-size: 15px;
 	transition: all 300ms ease;
 }
 
 .cardMoreInfo:hover{
 	transition: all 300ms ease;
-	background: #a19d9d;
+	background: #b5c9bd;
 }
 
 

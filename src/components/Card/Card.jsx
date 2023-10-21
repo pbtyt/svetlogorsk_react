@@ -25,7 +25,7 @@ const Card = ({ data }) => {
 
                 <Link to={`${data.id}`}>
                     <button className={styles.cardMoreInfo}>
-                        More  
+                        Больш падрабязна...
                     </button>
                 </Link>
             </div>
