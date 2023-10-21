@@ -19,7 +19,7 @@ const InfoPage = () => {
   return (
     <>
         {/* style={{backgroundImage: `url(${data.img_path})`, backgroundSize: ''}} */}
-        <div className={styles.pageContainer} style={{backgroundImage: `url(${data.img_path})`, backgroundSize: '', backgroundPosition: 'unset'}}>
+        <div className={styles.pageContainer} style={{backgroundImage: `url(${data.img_path})`, backgroundSize: '', backgroundPosition: 'center'}}>
             {/* <video loop autoPlay muted className={styles.videoBackground}>
                 <source src={bgVideo} type='video/mp4'/>
             </video> */}

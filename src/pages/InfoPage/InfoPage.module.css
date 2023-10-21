@@ -122,6 +122,10 @@
 		padding: 5px 10px;
 		font-weight: 400;
 	}
+
+	.main{
+		padding: 15px;
+	}
 	
 	.mainTitle{
 		font-size: 19px;
@@ -130,6 +134,20 @@
 	.mainInfo{
 		padding: 15px;
 		font-size: 15px;
+	}
+
+	.mainInfoWrapper{
+		flex-direction: column;
+	}
+
+	.heroCardsWrapper{
+		width: 100%;
+	}
+
+	.heroCards{
+		flex-wrap: nowrap;
+		overflow-x: scroll;
+		justify-content: unset;
 	}
 
 	.mainInfoWrapper p{
