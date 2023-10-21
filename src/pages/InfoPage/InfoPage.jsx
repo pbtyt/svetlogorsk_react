@@ -7,6 +7,10 @@ import { useParams } from 'react-router-dom'
 import moreInfo from '../../data/moreInfo.json'
 
 import bgVideo from '/operationBagration.mp4'
+
+import HeroCard from '../../components/HeroCard/HeroCard'
+
+
 const InfoPage = () => {
     const { id } = useParams()
 
@@ -38,6 +42,19 @@ const InfoPage = () => {
                 <p>
                     {data.info}
                 </p>
+
+                <div className={styles.heroCardsWrapper}>
+                    <div className={styles.heroCards}>
+                        <HeroCard/>
+                        <HeroCard/>
+                        <HeroCard/>
+                        <HeroCard/>
+                        <HeroCard/>
+                        <HeroCard/>
+                        <HeroCard/>
+                        <HeroCard/>
+                    </div>
+                </div>
             </div>
         </div>
     </>

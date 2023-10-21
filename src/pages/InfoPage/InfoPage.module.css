@@ -44,6 +44,7 @@
 
 .headerTitle{
 	font-size: 46px;
+	text-align: center;
 }
 
 .headerSubtitle{
@@ -69,8 +70,28 @@
 }
 
 .main{
-	max-width: 1110px;
-	margin: 0 auto;
+	padding: 40px;
+}
+
+.mainInfoWrapper{
+	display: flex;
+	gap: 15px;
+}
+
+.mainInfoWrapper p{
+	width: 100%;
+	font-size: 18px;
+}
+
+.heroCardsWrapper{
+	width: 75%;
+}
+
+.heroCards{
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+	justify-content: flex-end;
 }
 
 .mainTitle{
@@ -102,10 +123,6 @@
 		font-weight: 400;
 	}
 	
-	.main{
-		margin: 0;
-	}
-
 	.mainTitle{
 		font-size: 19px;
 	}
@@ -113,5 +130,9 @@
 	.mainInfo{
 		padding: 15px;
 		font-size: 15px;
+	}
+
+	.mainInfoWrapper p{
+		font-size: 13px;
 	}
 }
