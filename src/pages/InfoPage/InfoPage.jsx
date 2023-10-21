@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import styles from './InfoPage.module.css'
 
 import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 
 import moreInfo from '../../data/moreInfo.json'
+import heroesData from '../../data/heroes.json' 
 
 import bgVideo from '/operationBagration.mp4'
 
@@ -15,6 +16,15 @@ const InfoPage = () => {
     const { id } = useParams()
 
     const data = moreInfo.filter(el => el.id === (id - '0'))[0]
+    const heroes = heroesData.filter(el => el.id === (id - '0'))[0]
+    
+    const firstElRef = useRef(null)
+    const secondElRef = useRef(null)
+
+    useEffect(()=>{
+        const firstElHeight = firstElRef.current.offsetHeight;
+        secondElRef.current.style.height = `${firstElHeight}px` 
+    }, [])
 
   return (
     <>
@@ -39,20 +49,15 @@ const InfoPage = () => {
         <div className={styles.main}>
             <h2 className={styles.mainTitle}>Историческая справка</h2>
             <div className={styles.mainInfoWrapper}>
-                <p>
+                <p ref={ firstElRef }>
                     {data.info}
                 </p>
 
-                <div className={styles.heroCardsWrapper}>
+                <div className={styles.heroCardsWrapper} ref={ secondElRef }>
                     <div className={styles.heroCards}>
-                        <HeroCard/>
-                        <HeroCard/>
-                        <HeroCard/>
-                        <HeroCard/>
-                        <HeroCard/>
-                        <HeroCard/>
-                        <HeroCard/>
-                        <HeroCard/>
+                        {
+                            heroes.heroes.map( (heroInfo, index) => <HeroCard heroInfo={ heroInfo } key={ index }/>)
+                        }
                     </div>
                 </div>
             </div>

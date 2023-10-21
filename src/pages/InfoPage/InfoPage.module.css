@@ -76,6 +76,8 @@
 .mainInfoWrapper{
 	display: flex;
 	gap: 15px;
+
+	align-items: flex-start;
 }
 
 .mainInfoWrapper p{
@@ -85,6 +87,7 @@
 
 .heroCardsWrapper{
 	width: 75%;
+	overflow-y: scroll;
 }
 
 .heroCards{
