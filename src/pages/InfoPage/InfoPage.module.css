@@ -91,10 +91,9 @@
 }
 
 .heroCards{
-	display: flex;
-	gap: 8px;
-	flex-wrap: wrap;
-	justify-content: flex-end;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
 }
 
 .mainTitle{
@@ -148,9 +147,10 @@
 	}
 
 	.heroCards{
-		flex-wrap: nowrap;
 		overflow-x: scroll;
-		justify-content: unset;
+		grid-auto-columns: minmax(20%, 1fr);
+		grid-auto-flow: column;
+		grid-template-columns: unset;
 	}
 
 	.mainInfoWrapper p{

@@ -1,7 +1,7 @@
 .cardWrapper{
-    width: 25%;
-    border: 1.5px solid #91c4a7;
-    height: 100%;
+    /* width: 25%; */
+    border: 2px solid #8ebfa2;
+    /* height: 100%; */
 }
 
 .cardWrapper img{
@@ -13,13 +13,16 @@
 
 
 .heroName{
-    font-weight: 500;
+    position: relative;
+    bottom: 30px;
+    font-weight: 600;
     text-align: center;
     font-size: .8rem;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px){
 	.heroName{
-        font-size: .35em;
+        font-size: .35rem;
+        bottom: 20px;
     }
 }
