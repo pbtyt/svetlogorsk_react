@@ -22,7 +22,16 @@ body{
 
 button{
 	cursor: pointer;
+	outline: none;
+	border: none;
 }
+
+input{
+	border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
 
 @media screen and (min-width: 320px) and (max-width: 480px){
 	/*#root{
