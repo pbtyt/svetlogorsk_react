@@ -4,6 +4,7 @@ import videoBG from '/mainVideo.mp4'
 import Card from '../../components/Card/Card'
 
 import allData from '../../data/data.json'
+import { Link } from 'react-router-dom'
 
 const MainPage = () => {
   return (
@@ -17,6 +18,9 @@ const MainPage = () => {
         </header>
 
         <main className={styles.main}>
+            <Link to={"search"}>
+                Search Test
+            </Link>
             <div className={styles.container}>
                 <h2 className={styles.mainHeader}>
                 Времён связующая нить
