@@ -26,19 +26,21 @@ const SearchPage = () => {
                 <h3>Всего найдено: {data.length}</h3>
 
                 <table>
-                    <tr>
-                        <th>Название</th>
-                        <th>Год Разрушения</th>
-                        <th>Домов до войны</th>
-                        <th>Людей до войны</th>
-                        <th>Разрушено Домов</th>
-                        <th>Убито людей</th>
-                    </tr>
-
-                    {
-                        data.map((data, index) => <TableRow data={data} key={index} />)
-                    }
-
+                    <thead>
+                        <tr>
+                            <th>Название</th>
+                            <th>Год Разрушения</th>
+                            <th>Домов до войны</th>
+                            <th>Людей до войны</th>
+                            <th>Разрушено Домов</th>
+                            <th>Убито людей</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            data.map((data, index) => <TableRow data={data} key={index} />)
+                        }
+                    </tbody>
                 </table>
             </div>
         </div>

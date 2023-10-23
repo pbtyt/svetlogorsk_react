@@ -4,12 +4,12 @@ const TableRow = ( { data } ) => {
   return (
     <>
         <tr>
-            <td>{data.name}</td>
-            <td>{data.brokeDate}</td>
-            <td>{data.houseBeforeWar}</td>
-            <td>{data.peopleBeforeWar}</td>
-            <td>{data.brokeHouse}</td>
-            <td>{data.peopleKills}</td>
+            <td data-title="Название">{data.name}</td>
+            <td data-title="Год Разрушения">{data.brokeDate}</td>
+            <td data-title="Домов до войны">{data.houseBeforeWar}</td>
+            <td data-title="Людей до войны">{data.peopleBeforeWar}</td>
+            <td data-title="Разрушено Домов">{data.brokeHouse}</td>
+            <td data-title="Убито людей">{data.peopleKills}</td>
         </tr>
     </>
   )
