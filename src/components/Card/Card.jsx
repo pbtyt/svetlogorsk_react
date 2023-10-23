@@ -3,10 +3,7 @@ import { Link } from 'react-router-dom'
 
 import styles from './Card.module.css'
 
-import image from '/bag.jpg'
-
-
-const Card = ({ data }) => {
+const Card = ({ data, path }) => {
     const [isActivate, setIsActivate] = useState(false)
   return (
     <div className={styles.cardWrapper}>
@@ -23,7 +20,7 @@ const Card = ({ data }) => {
                     {data.desc}
                 </p>
 
-                <Link to={`${data.id}`}>
+                <Link to={`${data.id}/${path}`}>
                     <button className={styles.cardMoreInfo}>
                         Больш падрабязна...
                     </button>

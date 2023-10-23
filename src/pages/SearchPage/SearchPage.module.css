@@ -1,0 +1,23 @@
+table, th, td{
+    border: 1px solid black;
+}
+
+table{
+    width: 100%;
+}
+
+.wrapper{
+    padding: 20px;
+}
+
+.searchInputWrapper{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.searchInputWrapper input{
+    width: 100%;
+    padding: 8px;
+}
+

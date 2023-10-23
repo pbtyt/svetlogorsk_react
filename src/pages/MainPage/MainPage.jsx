@@ -19,12 +19,12 @@ const MainPage = () => {
         <main className={styles.main}>
             <div className={styles.container}>
                 <h2 className={styles.mainHeader}>
-                Памятныя мясціны нашага горада
+                Времён связующая нить
                 </h2>
 
                 <div className={styles.mainCardsWrapper}>
                     {
-                        allData.slice(0, 3).map(data => <Card data={data} key={data.id}/> )
+                        allData.slice(0, 3).map(data => <Card data={data} path={"1"} key={data.id}/> )
                     }
                 </div>
 
@@ -33,7 +33,7 @@ const MainPage = () => {
                 </h2>
                 <div className={styles.mainCardsWrapper}>
                     {
-                        allData.slice(3).map(data => <Card data={data} key={data.id}/> )
+                        allData.slice(3).map(data => <Card data={data} path={""} key={data.id}/> )
                     }
                 </div>
             </div>
