@@ -67,10 +67,11 @@
 }
 
 .cardMoreInfo{
+	font-weight: 450;
 	padding: 8px 20px;
 	border: 0px;
 	border-radius: 5px;
-	background: #cedbd3;
+	background: rgba(150, 147, 147, .2);
 	
 	font-size: 15px;
 	transition: all 300ms ease;
@@ -78,7 +79,8 @@
 
 .cardMoreInfo:hover{
 	transition: all 300ms ease;
-	background: #b5c9bd;
+	background: rgba(150, 147, 147, .35);
+
 }
 
 

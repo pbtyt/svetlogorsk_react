@@ -21,6 +21,8 @@ const InfoPage = () => {
     const firstElRef = useRef(null)
     const secondElRef = useRef(null)
 
+    window.scrollTo(0, 0);
+
     useEffect(()=>{
         try{
             const firstElHeight = firstElRef.current.offsetHeight;

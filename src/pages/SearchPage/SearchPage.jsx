@@ -10,6 +10,8 @@ const SearchPage = () => {
     const [searchValue, setSearchValue] = useState('')
     const [data, setData] = useState([])
 
+    window.scrollTo(0, 0);
+
     useEffect(() => {
         if (searchValue !== ' ')
             setData(villageData.filter(el => el.name.toLowerCase().includes(searchValue.toLowerCase())))
@@ -18,7 +20,7 @@ const SearchPage = () => {
     return (
         <div className={styles.wrapper}>
             <div className={styles.searchInputWrapper}>
-                <input type="text" value={searchValue} onChange={e => setSearchValue(e.target.value)} />
+                <input type="text" placeholder='Введите название...' value={searchValue} onChange={e => setSearchValue(e.target.value)} />
             </div>
 
             <div className={styles.searchInfo}>

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 const History = () => {
     const [isActivate, setIsActivate] = useState(false)
-
+    window.scrollTo(0, 0);
   return (
     <>
         <h1 style={{textAlign:"center", marginTop: "3rem"}}>
