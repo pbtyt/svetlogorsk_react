@@ -68,13 +68,12 @@ tbody tr{
 .wrapper a button{
     float: right;
     margin-top: 1.35rem;
-	padding: 5px 14px;
-	font-size: 18px;
-	border-radius: 10px;
-	border: 1px solid white;
-    background: #000;
-	color: white;
-	font-weight: 500;
+	border-radius: 5px;
+    background: lightgray;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 550;
 }
 
 @media screen and (min-width: 320px) and (max-width: 700px){

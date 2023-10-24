@@ -22,7 +22,7 @@ const Card = ({ data, path }) => {
 
                 <Link to={`${data.id}/${path}`}>
                     <button className={styles.cardMoreInfo}>
-                        Больш падрабязна...
+                        Подробнее...
                     </button>
                 </Link>
             </div>

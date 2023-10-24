@@ -17,8 +17,8 @@ const Router = () => {
         <Route path=":id" element={ <InfoPage/> }/>
         <Route path=":id/1" element={ <FInfoPage/> }/>
         <Route path="search" element={ <SearchPage/> }/>
+        <Route element={<>404</>} path='*'/>
       </Route>
-
     </Routes>  
 	</BrowserRouter>
 }

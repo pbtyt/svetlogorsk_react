@@ -5,12 +5,6 @@ import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 
 import moreInfo from '../../data/moreInfo.json'
-import heroesData from '../../data/heroes.json' 
-
-import bgVideo from '/operationBagration.mp4'
-
-import HeroCard from '../../components/HeroCard/HeroCard'
-
 
 const InfoPage = () => {
     const { id } = useParams()
@@ -20,10 +14,10 @@ const InfoPage = () => {
   return (
     <>
         {/* style={{backgroundImage: `url(${data.img_path})`, backgroundSize: ''}} */}
-        <div className={styles.pageContainer} style={{backgroundImage: `url(${data.img_path})`, backgroundSize: '', backgroundPosition: 'center'}}>
-            {/* <video loop autoPlay muted className={styles.videoBackground}>
-                <source src={bgVideo} type='video/mp4'/>
-            </video> */}
+        <div className={styles.pageContainer}>
+            <video loop autoPlay muted className={styles.videoBackground}>
+                <source src={data.img_path} type='video/mp4'/>
+            </video>
             
             <div className={styles.pageWrapper}>
                 <h1 className={styles.headerTitle}> {data.title} </h1>
@@ -31,7 +25,7 @@ const InfoPage = () => {
 
                 <Link to="/svetlogorsk_react">
                     <button>
-                        На галоўную...
+                        На главную...
                     </button>
                 </Link>
             </div>

@@ -1,0 +1,19 @@
+.wrapper{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    align-items: center;
+}
+
+.wrapper a button{
+    border-radius: 5px;
+    background: lightgray;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper h3{
+    font-weight: 450;
+}

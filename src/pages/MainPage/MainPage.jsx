@@ -2,6 +2,7 @@ import styles from './MainPage.module.css'
 import videoBG from '/mainVideo.mp4'
 
 import Card from '../../components/Card/Card'
+import Buttons from '../../components/Buttons/Buttons'
 
 import allData from '../../data/data.json'
 import { Link } from 'react-router-dom'
@@ -13,14 +14,11 @@ const MainPage = () => {
             <video loop autoPlay muted className={styles.headerVideo}>
                 <source src={videoBG} type="video/mp4"/>
             </video>
-            <h1 className={styles.headerTitle}> СВЕТЛАГОРСК </h1>
+            <h1 className={styles.headerTitle}> СВЕТЛОГОРСК </h1>
             <p className={styles.headerSubtitle}>Город с богатой историей </p>
         </header>
 
         <main className={styles.main}>
-            <Link to={"search"}>
-                Search Test
-            </Link>
             <div className={styles.container}>
                 <h2 className={styles.mainHeader}>
                 Времён связующая нить
@@ -41,6 +39,8 @@ const MainPage = () => {
                     }
                 </div>
             </div>
+
+            <Buttons/>
         </main>
     </>
   )

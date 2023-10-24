@@ -46,7 +46,7 @@ const InfoPage = () => {
 
                 <Link to="/svetlogorsk_react">
                     <button>
-                        На галоўную...
+                        На главную...
                     </button>
                 </Link>
             </div>
