@@ -46,34 +46,24 @@ tbody tr{
 }
 
 
-.searchInputWrapper button{
-    padding: 4px 10px;
-    background: #c1dbcc;
-    border-radius: 3px;
-    transition: background 300ms ease;
-
-    font-weight: 600;
-}
-
-.searchInputWrapper button:hover{
-    outline: 1px solid black;
-    background: #d5f5e2;
-    transition: background 300ms ease;
-}
- 
 .searchInfo h4{
     margin-bottom: 10px;
 }
 
 .wrapper a button{
-    float: right;
     margin-top: 1.35rem;
 	border-radius: 5px;
-    background: lightgray;
     padding: 8px 15px;
+    background: rgba(150, 147, 147, .2);
+    transition: all 300ms ease;
     text-decoration: none;
     color: black;
     font-weight: 550;
+}
+
+.wrapper a button:hover{
+    background: rgba(150, 147, 147, .35);
+    transition: all 400ms ease;
 }
 
 @media screen and (min-width: 320px) and (max-width: 700px){
