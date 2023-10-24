@@ -46,7 +46,7 @@ const InfoPage = () => {
                         <h1 className={styles.headerTitle}> {data.title} </h1>
                         <p className={styles.headerSubtitle}>Память народа </p>
 
-                        <Link to="/svetlogorsk_react">
+                        <Link to={"/svetlogorsk_react/"}>
                             <button>
                                 На главную...
                             </button>
@@ -75,7 +75,7 @@ const InfoPage = () => {
                 <h1 className={styles.headerTitle}> {data.title} </h1>
                 <p className={styles.headerSubtitle}>Память народа </p>
 
-                <Link to="/svetlogorsk_react">
+                <Link to={"/svetlogorsk_react/"}>
                     <button>
                         На главную...
                     </button>
