@@ -4,9 +4,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Layout from './Layout'
 
 import InfoPage from '../pages/InfoPage/InfoPage'
-import FInfoPage from '../pages/FInfoPage/FInfoPage'
 import MainPage from '../pages/MainPage/MainPage'
 import SearchPage from '../pages/SearchPage/SearchPage'
+import History from './History/History'
 
 const Router = () => {
   return <BrowserRouter>
@@ -16,6 +16,7 @@ const Router = () => {
         <Route index element={ <MainPage/> }/>
         <Route path=":id" element={ <InfoPage/> }/>
         <Route path="search" element={ <SearchPage/> }/>
+        <Route path="shatilki_cards" element={ <History/> }/>
         <Route element={<>404</>} path='*'/>
       </Route>
     </Routes>  

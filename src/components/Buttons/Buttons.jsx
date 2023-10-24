@@ -16,15 +16,6 @@ const Buttons = () => {
             </button>
         </Link>
 
-
-        <Link to={"about"}>
-            <button>
-                <h3>
-                    О нас
-                </h3>
-            </button>
-        </Link>
-
         <Link to={"shatilki_cards"}>
             <button>
                 <h3>
