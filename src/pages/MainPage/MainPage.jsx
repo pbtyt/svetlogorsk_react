@@ -26,7 +26,7 @@ const MainPage = () => {
 
                 <div className={styles.mainCardsWrapper}>
                     {
-                        allData.slice(0, 3).map(data => <Card data={data} path={"1"} key={data.id}/> )
+                        allData.slice(0, 3).map(data => <Card data={data} path={""} key={data.id}/> )
                     }
                 </div>
 
