@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 import styles from './SearchPage.module.css'
 
@@ -7,23 +8,24 @@ import villageData from '../../data/villages.json'
 
 const SearchPage = () => {
     const [searchValue, setSearchValue] = useState('')
-    const [query, setQuery] = useState('')
     const [data, setData] = useState([])
 
     useEffect(() => {
-        setData(villageData.filter(el => el.name.toLowerCase().includes(query.toLowerCase())))
-    }, [query])
+        if (searchValue !== ' ')
+            setData(villageData.filter(el => el.name.toLowerCase().includes(searchValue.toLowerCase())))
+    }, [searchValue])
 
     return (
         <div className={styles.wrapper}>
             <div className={styles.searchInputWrapper}>
                 <input type="text" value={searchValue} onChange={e => setSearchValue(e.target.value)} />
-
-                <button onClick={() => setQuery(searchValue)}>Искать</button>
             </div>
 
             <div className={styles.searchInfo}>
-                <h3>Всего найдено: {data.length}</h3>
+                {
+                    searchValue.length !== 0 ? <h4>Всего найдено: {data.length}</h4> : <></>
+                }
+                
 
                 <table>
                     <thead>
@@ -43,6 +45,12 @@ const SearchPage = () => {
                     </tbody>
                 </table>
             </div>
+
+            <Link to={"/svetlogorsk_react/"}>
+                <button>
+                    На главную
+                </button>
+            </Link>
         </div>
     )
 }

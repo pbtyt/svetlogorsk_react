@@ -23,7 +23,7 @@ const InfoPage = () => {
 
     useEffect(()=>{
         const firstElHeight = firstElRef.current.offsetHeight;
-        secondElRef.current.style.height = `${firstElHeight}px`;
+        secondElRef.current.style.maxHeight = `${firstElHeight}px`;
         try{
             setHeroes(heroesData.filter(el => el.id === (id - '0'))[0])
         }

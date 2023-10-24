@@ -14,7 +14,7 @@ const MainPage = () => {
                 <source src={videoBG} type="video/mp4"/>
             </video>
             <h1 className={styles.headerTitle}> СВЕТЛАГОРСК </h1>
-            <p className={styles.headerSubtitle}>Горад з багатай гісторыяй </p>
+            <p className={styles.headerSubtitle}>Город с богатой историей </p>
         </header>
 
         <main className={styles.main}>
@@ -33,7 +33,7 @@ const MainPage = () => {
                 </div>
 
                 <h2 className={styles.mainHeader}>
-                    Дарога памяці - дарога славы
+                    Дорога памяти - дорога славы
                 </h2>
                 <div className={styles.mainCardsWrapper}>
                     {
