@@ -22,9 +22,10 @@ const InfoPage = () => {
     const secondElRef = useRef(null)
 
     useEffect(()=>{
-        const firstElHeight = firstElRef.current.offsetHeight;
-        secondElRef.current.style.maxHeight = `${firstElHeight}px`;
         try{
+            const firstElHeight = firstElRef.current.offsetHeight;
+            secondElRef.current.style.maxHeight = `${firstElHeight}px`;
+        
             setHeroes(heroesData.filter(el => el.id === (id - '0'))[0])
         }
         catch{
@@ -32,7 +33,37 @@ const InfoPage = () => {
         }
     }, [])
 
-  return (
+  return data.id <= 3
+        ?(
+            <>
+                {/* style={{backgroundImage: `url(${data.img_path})`, backgroundSize: ''}} */}
+                <div className={styles.pageContainer}>
+                    <video loop autoPlay muted className={styles.videoBackground}>
+                        <source src={data.img_path} type='video/mp4'/>
+                    </video>
+                    
+                    <div className={styles.pageWrapper}>
+                        <h1 className={styles.headerTitle}> {data.title} </h1>
+                        <p className={styles.headerSubtitle}>Память народа </p>
+
+                        <Link to="/svetlogorsk_react">
+                            <button>
+                                На главную...
+                            </button>
+                        </Link>
+                    </div>
+                </div>
+
+                <div className={styles.main}>
+                    <h2 className={styles.mainTitle}>Историческая справка</h2>
+                    <div className={styles.mainInfoWrapper}>
+                        <p>
+                            {data.info}
+                        </p>
+                    </div>
+                </div>
+            </>
+        ) : (
     <>
         {/* style={{backgroundImage: `url(${data.img_path})`, backgroundSize: ''}} */}
         <div className={styles.pageContainer} style={{backgroundImage: `url(${data.img_path})`, backgroundSize: '', backgroundPosition: 'center'}}>
