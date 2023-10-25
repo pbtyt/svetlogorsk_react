@@ -10,7 +10,7 @@ const History = () => {
   return (
     <>
         <h1 style={{textAlign:"center", marginTop: "3rem"}}>
-            Шатилки ушедшие в историю
+            Шатилки, ушедшие в историю
         </h1>
         <div className={styles.wrapper}>
             <div className={styles.cardWrapper}>

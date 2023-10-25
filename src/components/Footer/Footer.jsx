@@ -6,12 +6,23 @@ const Footer = () => {
         <div className={styles.blockFooterWrapper}>
             <div style={{flexGrow: "1"}} ></div>
                 <div className={styles.authors}>
-                    <h3>Авторы</h3>
+                    {/* Учащиеся 11А класса "Срденяя школа №12 г.Светлогорска" */}
+                    <h3>Авторы (Учащиеся 11А класса "Средняя школа №12 г.Светлогорска")</h3>
                     <h4>Бобченок Никита</h4>
                     <h4>Полуян Глеб</h4>
-                    <h4>Королюк Максим</h4>
+                    <h4>Королюк Максим </h4>
             </div>
         </div>
+
+        
+                    
+                <div className={styles.contacts}>
+                    <h3>Контакты</h3>
+                    <h4>+375293033229(nikitabobchenok.work@gmail.com)</h4>
+                    <h4>+375291731643(glebanya25@gmail.com)</h4>
+                    <h4>+375447665850(korolukmx2@gmail.com)</h4>
+                </div>
+       
 
         <div style={{borderTop: "1px solid rgba(66,66,66,.20)", margin: "20px 0px"}}></div>
         <div>

@@ -19,7 +19,7 @@ const Buttons = () => {
         <Link to={"shatilki_cards"}>
             <button>
                 <h3>
-                    Шатилки ушедшие в историю
+                    Шатилки, ушедшие в историю
                 </h3>
             </button>
         </Link>

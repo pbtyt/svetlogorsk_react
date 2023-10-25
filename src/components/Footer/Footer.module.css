@@ -7,9 +7,11 @@
 }
 
 .authors{
+	text-align: center;
 	display: flex;
 	gap: 5px;
 	flex-direction: column;
+	height: auto;
 }
 
 .authors h3{
@@ -21,11 +23,32 @@
 	font-weight: 600;
 	font-size: 11px;
 }
+.contacts {
+
+	text-align:center;
+	display: flex;
+	gap: 5px;
+	flex-direction: column;
+	position: absolute;
+	
+}
+.contacts h3{
+	margin-bottom: 10px;
+	font-size: 13px;
+	height: auto;
+	
+}
+.contacts h4{
+	font-weight: 600;
+	font-size: 11px;
+
+}
 
 
 .blockFooterWrapper{
 	display: flex;
 	flex-grow: 1;
+
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px){
