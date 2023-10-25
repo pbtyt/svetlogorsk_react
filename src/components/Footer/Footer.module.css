@@ -6,6 +6,10 @@
 	flex-direction: column;
 }
 
+.spacer{
+	flex-grow: 1;
+}
+
 .authors{
 	text-align: center;
 	display: flex;
@@ -29,19 +33,15 @@
 	display: flex;
 	gap: 5px;
 	flex-direction: column;
-	position: absolute;
-	
 }
 .contacts h3{
 	margin-bottom: 10px;
 	font-size: 13px;
-	height: auto;
-	
 }
+
 .contacts h4{
 	font-weight: 600;
 	font-size: 11px;
-
 }
 
 
@@ -51,11 +51,21 @@
 
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px){
+@media screen and (min-width: 320px) and (max-width: 768px){
 	.footer{
 		margin-top: 1.65rem;
 		padding: 10px;
 	}
+
+	.spacer{
+		display: block;
+	}
+
+	.blockFooterWrapper{
+		flex-direction: column-reverse;
+		gap: 1rem;
+	}
+
 	.authors h4{
 		font-size: 10px;
 	}
