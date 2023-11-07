@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "question": "",
+        "answers": ["fst", "snd", "tth", "fth"],
+        "correctAnswer": "snd"
+    },
+    {
+        "id": 2,
+        "question": "",
+        "answers": ["fth", "sth", "sth", "eth"],
+        "correctAnswer": "eth"
+    }
+]
