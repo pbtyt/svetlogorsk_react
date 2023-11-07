@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 import styles from './SearchPage.module.css'
 
+import Header from '../../components/Header/Header'
 import TableRow from '../../components/TableRow/TableRow'
 import DropDown from '../../components/DropDown/DropDown'
 
@@ -32,6 +33,7 @@ const SearchPage = () => {
     }, [searchValue, filterValue])
     return (
         <div className={styles.wrapper}>
+            <Header activeButtonIndex={2}/>
             <div className={styles.searchInputWrapper}>
                 <input type="text" placeholder='Введите название...' value={searchValue} onChange={e => setSearchValue(e.target.value)} />
             </div>

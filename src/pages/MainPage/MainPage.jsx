@@ -1,11 +1,10 @@
 import styles from './MainPage.module.css'
 import videoBG from '/mainVideo.mp4'
 
+import Header from '../../components/Header/Header'
 import Card from '../../components/Card/Card'
-import Buttons from '../../components/Buttons/Buttons'
 
 import allData from '../../data/data.json'
-import { Link } from 'react-router-dom'
 
 const MainPage = () => {
   return (
@@ -19,9 +18,10 @@ const MainPage = () => {
         </header>
 
         <main className={styles.main}>
+            <Header activeButtonIndex={1}/>
             <div className={styles.container}>
                 <h2 className={styles.mainHeader}>
-                Времён связующая нить
+                    Времён связующая нить
                 </h2>
 
                 <div className={styles.mainCardsWrapper}>
@@ -39,8 +39,6 @@ const MainPage = () => {
                     }
                 </div>
             </div>
-
-            <Buttons/>
         </main>
     </>
   )

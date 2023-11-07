@@ -1,15 +1,17 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 import styles from './History.module.css'
 
-import { Link } from 'react-router-dom'
+import Header from '../Header/Header'
 
 const History = () => {
     const [isActivate, setIsActivate] = useState(false)
     window.scrollTo(0, 0);
   return (
     <>
-        <h1 style={{textAlign:"center", marginTop: "3rem"}}>
+        <Header activeButtonIndex={3}/>
+        <h1 style={{textAlign:"center", marginTop: "1.5rem"}}>
             Шатилки, ушедшие в историю
         </h1>
         <div className={styles.wrapper}>
