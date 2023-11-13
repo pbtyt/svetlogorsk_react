@@ -13,8 +13,8 @@ const MainPage = () => {
             <video loop autoPlay muted className={styles.headerVideo}>
                 <source src={videoBG} type="video/mp4"/>
             </video>
-            <h1 className={styles.headerTitle}> СВЕТЛОГОРСК </h1>
-            <p className={styles.headerSubtitle}>Город с богатой историей </p>
+            <h1 className={styles.headerTitle}> Дорога памяти — Дорога славы </h1>
+            <p className={styles.headerSubtitle}>Светлогорщина с богатой историей</p>
         
             <a href="#main-top">
                 <img src="./chevron-down.svg" alt="chevron" />

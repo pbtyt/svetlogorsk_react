@@ -12,7 +12,6 @@ import GamePage from '../pages/GamePage/GamePage'
 const Router = () => {
   return <BrowserRouter>
     <Routes>
-
       <Route path="/svetlogorsk_react/" element={<Layout/>}>
         <Route index element={ <MainPage/> }/>
         <Route path=":id" element={ <InfoPage/> }/>
