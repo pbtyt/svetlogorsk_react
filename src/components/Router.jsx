@@ -8,6 +8,7 @@ import MainPage from '../pages/MainPage/MainPage'
 import SearchPage from '../pages/SearchPage/SearchPage'
 import History from './History/History'
 import GamePage from '../pages/GamePage/GamePage'
+import AboutUs from '../pages/AboutUs/AboutUs'
 
 const Router = () => {
   return <BrowserRouter>
@@ -18,6 +19,7 @@ const Router = () => {
         <Route path="search" element={ <SearchPage/> }/>
         <Route path="shatilki_cards" element={ <History/> }/>
         <Route path="game" element={<GamePage/>}/>
+        <Route path="about-us" element={<AboutUs/>}/>
         <Route element={<>404</>} path='*'/>
       </Route>
     </Routes>  

@@ -27,6 +27,19 @@ const Header = ( {activeButtonIndex=0} ) => {
         isActive={activeButtonIndex===2}
       />
 
+      <HeaderButton 
+        path="/svetlogorsk_react/game" 
+        svg_path='./Header/game.svg' 
+        buttonText='Викторина'
+        isActive={activeButtonIndex===4}
+      />
+
+      <HeaderButton 
+        path="/svetlogorsk_react/about-us" 
+        svg_path='./Header/game.svg' 
+        buttonText='О сайте'
+        isActive={activeButtonIndex===5}
+      />
     </div>
   )
 }

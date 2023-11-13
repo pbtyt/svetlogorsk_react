@@ -59,7 +59,7 @@ tbody tr:nth-child(even){
 
 .searchInputWrapper input:focus{
     color:white;
-    background: #3fbba2;
+    background: #37aa93;
     outline: 1px solid black;
     transition: all 300ms ease;
 }

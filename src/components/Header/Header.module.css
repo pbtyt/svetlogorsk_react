@@ -12,3 +12,12 @@
     justify-content: center;
     gap: 2rem;
 }
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .buttonsWrapper{
+        margin-left: 1rem;
+        gap: 1rem;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,11 @@
+.aboutUsWrapper{
+    height: 100%;
+}
+
+.contentWrapper{
+    display: flex;
+}
+
+.contentWrapper > *{
+    flex-grow: 1;
+}

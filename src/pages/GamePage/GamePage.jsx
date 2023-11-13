@@ -1,12 +1,16 @@
 import React, { useState } from 'react'
 import styles from './GamePage.module.css'
 
+import Header from '../../components/Header/Header'
+
 import gameData from '../../data/game.json'
 
 const GamePage = () => {
     const [currentQuestion, setCurrentQuestion] = useState(0);
+    window.scrollTo(0,0)
     return (
         <div className={styles.gameWrapper}>
+            {/* <Header activeButtonIndex={4}/> */}
             <div className={styles.gameContentWrapper}>
                 <h3 className={styles.questionTitle}>
                     Вопрос №{gameData[currentQuestion]?.id}

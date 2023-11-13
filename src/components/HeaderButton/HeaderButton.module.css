@@ -1,4 +1,6 @@
 .buttonWrapper{
+    user-select: none;
+
     display: flex;
     align-items: center;
     gap: .45rem;
