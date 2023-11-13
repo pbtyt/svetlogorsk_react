@@ -15,9 +15,13 @@ const MainPage = () => {
             </video>
             <h1 className={styles.headerTitle}> СВЕТЛОГОРСК </h1>
             <p className={styles.headerSubtitle}>Город с богатой историей </p>
+        
+            <a href="#main-top">
+                <img src="./chevron-down.svg" alt="chevron" />
+            </a>
         </header>
 
-        <main className={styles.main}>
+        <main className={styles.main} id="main-top">
             <Header activeButtonIndex={1}/>
             <div className={styles.container}>
                 <h2 className={styles.mainHeader}>

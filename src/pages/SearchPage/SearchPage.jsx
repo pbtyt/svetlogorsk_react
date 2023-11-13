@@ -32,7 +32,7 @@ const SearchPage = () => {
 
     }, [searchValue, filterValue])
     return (
-        <div className={styles.wrapper}>
+        <div className={styles.searchWrapper}>
             <Header activeButtonIndex={2}/>
             <div className={styles.searchInputWrapper}>
                 <input type="text" placeholder='Введите название...' value={searchValue} onChange={e => setSearchValue(e.target.value)} />
@@ -68,12 +68,6 @@ const SearchPage = () => {
                     </tbody>
                 </table>
             </div>
-
-            <Link to={"/svetlogorsk_react/"}>
-                <button>
-                    На главную
-                </button>
-            </Link>
         </div>
     )
 }

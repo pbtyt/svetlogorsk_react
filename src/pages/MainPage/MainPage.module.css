@@ -12,6 +12,11 @@
 	color: white;
 }
 
+.header a{
+	position: absolute;
+	bottom: 0;
+}
+
 .headerVideo{
 	z-index: -2;
 	position: absolute;

@@ -9,7 +9,14 @@ const Card = ({ data, path }) => {
     <div className={styles.cardWrapper}>
         <div className={styles.card} onClick={()=>setIsActivate(!isActivate)}>
             <div className={`${styles.cardSide} ${styles.front} ${isActivate ? styles.activate : ''}`}>
-                <img className={styles.cardImg} src={data.img_path}/>
+                <div className={styles.cardImgWrapper}>
+                    <div className={styles.hoverInfo}>
+                        <button>
+                            Нажмите, чтобы перевернуть
+                        </button>
+                    </div>
+                    <img className={styles.cardImg} src={data.img_path}/>
+                </div>
                 <h3 className={styles.cardTitle}>
                     {data.title}
                 </h3>

@@ -41,12 +41,6 @@ const History = () => {
                 </div>
             </div>
         </div>
-
-        <Link to={"/svetlogorsk_react/"} style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
-            <button>
-                На главную
-            </button>
-        </Link>
     </>
   )
 }
