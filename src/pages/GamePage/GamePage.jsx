@@ -63,9 +63,7 @@ const GamePage = () => {
                         На главную
                     </button>
                 </Link>
-            </div>
-
-            
+            </div>            
         )
 }
 

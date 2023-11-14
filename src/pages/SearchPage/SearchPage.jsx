@@ -29,7 +29,6 @@ const SearchPage = () => {
             if (!isInc)
                 setData( prevData => prevData.reverse() )
         }
-
     }, [searchValue, filterValue])
     return (
         <div className={styles.searchWrapper}>
@@ -46,19 +45,49 @@ const SearchPage = () => {
                 <table>
                     <thead>
                         <tr>
-                            <th>Название</th>
-                            <th>Год Разрушения</th>
-                            <th>Домов до войны</th>
-                            <th>Людей до войны</th>
                             <th>
-                                <div style={{display: "flex", gap: ".5rem", padding: ".3rem", alignItems: "center"}}>
-                                    Разрушено Домов
+                                Название
+                            </th>
+                            <th>
+                                <div style={{display: "flex", gap: ".5rem", padding: ".3rem", alignItems: "center", justifyContent: "center"}}>
+                                    Год Разрушения
                                     {/* !!!FILTER */}
-                                    <button onClick={ ()=>{setFilterValue( {"brokeHouse": "inc"} )} } >^</button>
-                                    <button style={{rotate: "Z 180deg"}} onClick={ ()=>{setFilterValue( {"brokeHouse": "dec"} )} } >^</button>
+                                    <button style={{background: "none", color: "white", fontWeight: "600", fontSize: "16px"}} onClick={ ()=>{setFilterValue( {"brokeDate": "inc"} )} } >^</button>
+                                    <button style={{rotate: "Z 180deg", background: "none", color: "white", fontWeight: "600", fontSize: "16px"}} onClick={ ()=>{setFilterValue( {"brokeDate": "dec"} )} } >^</button>
                                 </div>
                             </th>
-                            <th>Убито людей</th>
+                            <th>
+                                <div style={{display: "flex", gap: ".5rem", padding: ".3rem", alignItems: "center", justifyContent: "center"}}>
+                                    Домов до войны
+                                    {/* !!!FILTER */}
+                                    <button style={{background: "none", color: "white", fontWeight: "600", fontSize: "16px"}} onClick={ ()=>{setFilterValue( {"houseBeforeWar": "inc"} )} } >^</button>
+                                    <button style={{rotate: "Z 180deg", background: "none", color: "white", fontWeight: "600", fontSize: "16px"}} onClick={ ()=>{setFilterValue( {"houseBeforeWar": "dec"} )} } >^</button>
+                                </div>
+                            </th>
+                            <th>
+                                <div style={{display: "flex", gap: ".5rem", padding: ".3rem", alignItems: "center", justifyContent: "center"}}>
+                                    Людей до войны
+                                    {/* !!!FILTER */}
+                                    <button style={{background: "none", color: "white", fontWeight: "600", fontSize: "16px"}} onClick={ ()=>{setFilterValue( {"peopleBeforeWar": "inc"} )} } >^</button>
+                                    <button style={{rotate: "Z 180deg", background: "none", color: "white", fontWeight: "600", fontSize: "16px"}} onClick={ ()=>{setFilterValue( {"peopleBeforeWar": "dec"} )} } >^</button>
+                                </div>
+                            </th>
+                            <th>
+                                <div style={{display: "flex", gap: ".5rem", padding: ".3rem", alignItems: "center", justifyContent: "center"}}>
+                                    Разрушено Домов
+                                    {/* !!!FILTER */}
+                                    <button style={{background: "none", color: "white", fontWeight: "600", fontSize: "16px"}} onClick={ ()=>{setFilterValue( {"brokeHouse": "inc"} )} } >^</button>
+                                    <button style={{rotate: "Z 180deg", background: "none", color: "white", fontWeight: "600", fontSize: "16px"}} onClick={ ()=>{setFilterValue( {"brokeHouse": "dec"} )} } >^</button>
+                                </div>
+                            </th>
+                            <th>
+                                <div style={{display: "flex", gap: ".5rem", padding: ".3rem", alignItems: "center", justifyContent: "center"}}>
+                                    Убито людей
+                                    {/* !!!FILTER */}
+                                    <button style={{background: "none", color: "white", fontWeight: "600", fontSize: "16px"}} onClick={ ()=>{setFilterValue( {"peopleKills": "inc"} )} } >^</button>
+                                    <button style={{rotate: "Z 180deg", background: "none", color: "white", fontWeight: "600", fontSize: "16px"}} onClick={ ()=>{setFilterValue( {"peopleKills": "dec"} )} } >^</button>
+                                </div>
+                            </th>
                         </tr>
                     </thead>
                     <tbody>

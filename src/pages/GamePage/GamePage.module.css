@@ -20,6 +20,7 @@
 
 .questionDesc{
     font-weight: 500;
+    
     text-align: center;
 }
 
@@ -43,6 +44,8 @@
 }
 
 .wrongAnswer{
+    font-family: fantasy;
+    glyph-orientation-horizontal: 0deg;
     background-color: red;
 }
 
