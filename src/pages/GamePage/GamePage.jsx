@@ -7,8 +7,11 @@ import gameData from '../../data/game.json'
 
 const GamePage = () => {
     const [currentQuestion, setCurrentQuestion] = useState(0);
+    const [rightQuestionQuantity, setRightQuestionQuantity] = useState(0);
+    const [stat, setStat] = useState({});
     window.scrollTo(0,0)
-    return (
+    return gameData[currentQuestion]
+    ? ( 
         <div className={styles.gameWrapper}>
             {/* <Header activeButtonIndex={4}/> */}
             <div className={styles.gameContentWrapper}>
@@ -17,24 +20,34 @@ const GamePage = () => {
                 </h3>
 
                 <p className={styles.questionDesc}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>
-                    Blanditiis nobis, quo nihil sequi ratione dolorum necessitatibus <br/>
-                    harum doloribus at distinctio minus excepturi, consectetur officiis <br/>
-                    vero velit sunt quaerat. Eius, dolorum.
+                    {gameData[currentQuestion]?.question}
                 </p>
 
                 <div className={styles.answerButtons}>
                     {
                         gameData[currentQuestion]?.answers.map(
-                            (el,index) => (<button key={index} onClick={ ()=>{
-                                el === gameData[currentQuestion]?.correctAnswer
-                                    ? setCurrentQuestion(prevQuestion => prevQuestion+1)
-                                    : setCurrentQuestion(currentQuestion)
+                            (el,index) => (<button key={index} style={{buttonStyle}} onClick={ ()=>{
+                                if (el === gameData[currentQuestion]?.correctAnswer){
+                                    setRightQuestionQuantity(prevQuantity => prevQuantity+1)
+                                }
+                                else{
+                                    setStat(prevStat => {
+                                        Object.assign(prevStat, gameData[currentQuestion])
+                                    })
+                                }
+                                
+                                setCurrentQuestion(prevQuestion => prevQuestion+1)
                             } }>{el}</button>)
                         )
                     }
                 </div>
             </div>
+        </div>
+    )
+    :
+    (
+        <div className={styles.gameWrapper}>
+            {rightQuestionQuantity}
         </div>
     )
 }

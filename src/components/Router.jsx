@@ -19,7 +19,6 @@ const Router = () => {
         <Route path="search" element={ <SearchPage/> }/>
         <Route path="shatilki_cards" element={ <History/> }/>
         <Route path="game" element={<GamePage/>}/>
-        <Route path="about-us" element={<AboutUs/>}/>
         <Route element={<>404</>} path='*'/>
       </Route>
     </Routes>  

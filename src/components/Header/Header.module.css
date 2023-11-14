@@ -17,7 +17,6 @@
     .buttonsWrapper{
         margin-left: 1rem;
         gap: 1rem;
-        align-items: flex-start;
         flex-direction: column;
     }
 }

@@ -41,6 +41,10 @@
     transition: background-color 600ms ease;
 }
 
+.wrongAnswer{
+    background-color: red;
+}
+
 /* 
 onClick
 .answerButtons button{

@@ -8,7 +8,7 @@ const Footer = () => {
             <div className={styles.contacts}>
                 <h3>Контакты</h3>
                 <h4>+375293033229(nikitabobchenok.work@gmail.com)</h4>
-                <h4>+375291731643(glebanya25@gmail.com)</h4>
+                <h4>+375291731643(Gleb.polyan1337@mail.ru)</h4>
                 <h4>+375447665850(korolukmx2@gmail.com)</h4>
             </div>
             
