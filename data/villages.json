@@ -1,0 +1,522 @@
+[
+    {
+        "name": "Берлажь",
+        "brokeDate": "1944",
+        "houseBeforeWar": "21",
+        "peopleBeforeWar": "112",
+        "brokeHouse": "19",
+        "peopleKills": "0"
+    },
+    {
+        "name": "Василевка",
+        "brokeDate": "1943",
+        "houseBeforeWar": "135",
+        "peopleBeforeWar": "467",
+        "brokeHouse": "135",
+        "peopleKills": "25"
+    },
+    {
+        "name": "Великий Бор",
+        "brokeDate": "1942",
+        "houseBeforeWar": "89",
+        "peopleBeforeWar": "352",
+        "brokeHouse": "79",
+        "peopleKills": "40"
+    },
+    {
+        "name": "Верхлесье",
+        "brokeDate": "1944",
+        "houseBeforeWar": "68",
+        "peopleBeforeWar": "250",
+        "brokeHouse": "68",
+        "peopleKills": "0"
+    },
+    {
+        "name": "Виша",
+        "brokeDate": "1943",
+        "houseBeforeWar": "64",
+        "peopleBeforeWar": "259",
+        "brokeHouse": "59",
+        "peopleKills": "100"
+    },
+    {
+        "name": "Вьюнище",
+        "brokeDate": "1943",
+        "houseBeforeWar": "102",
+        "peopleBeforeWar": "429",
+        "brokeHouse": "102",
+        "peopleKills": "57"
+    },
+    {
+        "name": "Вяжны",
+        "brokeDate": "1944",
+        "houseBeforeWar": "144",
+        "peopleBeforeWar": "487",
+        "brokeHouse": "143",
+        "peopleKills": "70"
+    },
+    {
+        "name": "Гамза",
+        "brokeDate": "1944",
+        "houseBeforeWar": "92",
+        "peopleBeforeWar": "440",
+        "brokeHouse": "36",
+        "peopleKills": "21"
+    },
+    {
+        "name": "Дедное",
+        "brokeDate": "1943",
+        "houseBeforeWar": "37",
+        "peopleBeforeWar": "148",
+        "brokeHouse": "23",
+        "peopleKills": "17"
+    },
+    {
+        "name": "Дражня",
+        "brokeDate": "1943",
+        "houseBeforeWar": "52",
+        "peopleBeforeWar": "169",
+        "brokeHouse": "52",
+        "peopleKills": "27"
+    },
+    {
+        "name": "Дуброва",
+        "brokeDate": "1944",
+        "houseBeforeWar": "211",
+        "peopleBeforeWar": "795",
+        "brokeHouse": "181",
+        "peopleKills": "110"
+    },
+    {
+        "name": "Ельнички",
+        "brokeDate": "1944",
+        "houseBeforeWar": "43",
+        "peopleBeforeWar": "200",
+        "brokeHouse": "43",
+        "peopleKills": "0"
+    },
+    {
+        "name": "Заречье",
+        "brokeDate": "1943",
+        "houseBeforeWar": "77",
+        "peopleBeforeWar": "280",
+        "brokeHouse": "77",
+        "peopleKills": "24"
+    },
+    {
+        "name": "Здудичи",
+        "brokeDate": "1944",
+        "houseBeforeWar": "215",
+        "peopleBeforeWar": "784",
+        "brokeHouse": "215",
+        "peopleKills": "57"
+    },
+    {
+        "name": "Искра",
+        "brokeDate": "1943",
+        "houseBeforeWar": "69",
+        "peopleBeforeWar": "328",
+        "brokeHouse": "57",
+        "peopleKills": "29"
+    },
+    {
+        "name": "Кастричник, пос.",
+        "brokeDate": "1944",
+        "houseBeforeWar": "37",
+        "peopleBeforeWar": "140",
+        "brokeHouse": "0",
+        "peopleKills": "0"
+    },
+    {
+        "name": "Китин",
+        "brokeDate": "1944",
+        "houseBeforeWar": "320",
+        "peopleBeforeWar": "1420",
+        "brokeHouse": "110",
+        "peopleKills": "2"
+    },
+    {
+        "name": "Козловка",
+        "brokeDate": "1944",
+        "houseBeforeWar": "230",
+        "peopleBeforeWar": "760",
+        "brokeHouse": "560",
+        "peopleKills": "0"
+    },
+    {
+        "name": "Козы",
+        "brokeDate": "1943",
+        "houseBeforeWar": "14",
+        "peopleBeforeWar": "56",
+        "brokeHouse": "14",
+        "peopleKills": "3"
+    },
+    {
+        "name": "Красновка",
+        "brokeDate": "1944",
+        "houseBeforeWar": "117",
+        "peopleBeforeWar": "297",
+        "brokeHouse": "54",
+        "peopleKills": "2"
+    },
+    {
+        "name": "Липники",
+        "brokeDate": "1943",
+        "houseBeforeWar": "66",
+        "peopleBeforeWar": "22",
+        "brokeHouse": "66",
+        "peopleKills": "11"
+    },
+    {
+        "name": "Малимоны",
+        "brokeDate": "1943",
+        "houseBeforeWar": "62",
+        "peopleBeforeWar": "201",
+        "brokeHouse": "62",
+        "peopleKills": "118"
+    },
+    {
+        "name": "Мартыновичи",
+        "brokeDate": "1943",
+        "houseBeforeWar": "50",
+        "peopleBeforeWar": "170",
+        "brokeHouse": "47",
+        "peopleKills": "15"
+    },
+    {
+        "name": "Медведов",
+        "brokeDate": "1943",
+        "houseBeforeWar": "26",
+        "peopleBeforeWar": "162",
+        "brokeHouse": "22",
+        "peopleKills": "7"
+    },
+    {
+        "name": "Меховщина",
+        "brokeDate": "1943",
+        "houseBeforeWar": "90",
+        "peopleBeforeWar": "358",
+        "brokeHouse": "87",
+        "peopleKills": "51"
+    },
+    {
+        "name": "Михайловка",
+        "brokeDate": "1944",
+        "houseBeforeWar": "30",
+        "peopleBeforeWar": "115",
+        "brokeHouse": "28",
+        "peopleKills": "27"
+    },
+    {
+        "name": "Михайловка",
+        "brokeDate": "1943",
+        "houseBeforeWar": "85",
+        "peopleBeforeWar": "480",
+        "brokeHouse": "85",
+        "peopleKills": "3"
+    },
+    {
+        "name": "Мольча, пос.",
+        "brokeDate": "1943",
+        "houseBeforeWar": "60",
+        "peopleBeforeWar": "239",
+        "brokeHouse": "60",
+        "peopleKills": "60"
+    },
+    {
+        "name": "Мыслов Рог",
+        "brokeDate": "1943",
+        "houseBeforeWar": "123",
+        "peopleBeforeWar": "485",
+        "brokeHouse": "123",
+        "peopleKills": "102"
+    },
+    {
+        "name": "Николаевка",
+        "brokeDate": "1944",
+        "houseBeforeWar": "70",
+        "peopleBeforeWar": "215",
+        "brokeHouse": "68",
+        "peopleKills": "65"
+    },
+    {
+        "name": "Ола",
+        "brokeDate": "1944",
+        "houseBeforeWar": "34",
+        "peopleBeforeWar": "168",
+        "brokeHouse": "34",
+        "peopleKills": "168"
+    },
+    {
+        "name": "Осопное",
+        "brokeDate": "1943",
+        "houseBeforeWar": "40",
+        "peopleBeforeWar": "192",
+        "brokeHouse": "30",
+        "peopleKills": "15"
+    },
+    {
+        "name": "Осташковичи",
+        "brokeDate": "1941",
+        "houseBeforeWar": "350",
+        "peopleBeforeWar": "1713",
+        "brokeHouse": "297",
+        "peopleKills": "120"
+    },
+    {
+        "name": "Островчицы",
+        "brokeDate": "1944",
+        "houseBeforeWar": "100",
+        "peopleBeforeWar": "500",
+        "brokeHouse": "89",
+        "peopleKills": "260"
+    },
+    {
+        "name": "Песчаная Рудня",
+        "brokeDate": "1941",
+        "houseBeforeWar": "58",
+        "peopleBeforeWar": "240",
+        "brokeHouse": "58",
+        "peopleKills": "8"
+    },
+    {
+        "name": "Петровичи",
+        "brokeDate": "1944",
+        "houseBeforeWar": "130",
+        "peopleBeforeWar": "397",
+        "brokeHouse": "126",
+        "peopleKills": "41"
+    },
+    {
+        "name": "Печищи",
+        "brokeDate": "1942",
+        "houseBeforeWar": "65",
+        "peopleBeforeWar": "278",
+        "brokeHouse": "53",
+        "peopleKills": "120"
+    },
+    {
+        "name": "Поганцы",
+        "brokeDate": "1944",
+        "houseBeforeWar": "97",
+        "peopleBeforeWar": "410",
+        "brokeHouse": "52",
+        "peopleKills": "0"
+    },
+    {
+        "name": "Пожихарь",
+        "brokeDate": "1943",
+        "houseBeforeWar": "26",
+        "peopleBeforeWar": "142",
+        "brokeHouse": "24",
+        "peopleKills": "3"
+    },
+    {
+        "name": "Полесье (Кобыльщина)",
+        "brokeDate": "1943",
+        "houseBeforeWar": "127",
+        "peopleBeforeWar": "635",
+        "brokeHouse": "110",
+        "peopleKills": "220"
+    },
+    {
+        "name": "Присторань",
+        "brokeDate": "1942",
+        "houseBeforeWar": "61",
+        "peopleBeforeWar": "254",
+        "brokeHouse": "61",
+        "peopleKills": "0"
+    },
+    {
+        "name": "Притыка",
+        "brokeDate": "1943",
+        "houseBeforeWar": "37",
+        "peopleBeforeWar": "143",
+        "brokeHouse": "37",
+        "peopleKills": "53"
+    },
+    {
+        "name": "Прудок",
+        "brokeDate": "1943",
+        "houseBeforeWar": "101",
+        "peopleBeforeWar": "390",
+        "brokeHouse": "70",
+        "peopleKills": "0"
+    },
+    {
+        "name": "Раковичи",
+        "brokeDate": "1943",
+        "houseBeforeWar": "75",
+        "peopleBeforeWar": "275",
+        "brokeHouse": "75",
+        "peopleKills": "95"
+    },
+    {
+        "name": "Ракшин",
+        "brokeDate": "1944",
+        "houseBeforeWar": "65",
+        "peopleBeforeWar": "390",
+        "brokeHouse": "65",
+        "peopleKills": "32"
+    },
+    {
+        "name": "Расова",
+        "brokeDate": "1943",
+        "houseBeforeWar": "53",
+        "peopleBeforeWar": "260",
+        "brokeHouse": "41",
+        "peopleKills": "27"
+    },
+    {
+        "name": "Рудня",
+        "brokeDate": "1943",
+        "houseBeforeWar": "75",
+        "peopleBeforeWar": "302",
+        "brokeHouse": "73",
+        "peopleKills": "86"
+    },
+    {
+        "name": "Светочь (Какаль)",
+        "brokeDate": "1943",
+        "houseBeforeWar": "43",
+        "peopleBeforeWar": "247",
+        "brokeHouse": "16",
+        "peopleKills": "36"
+    },
+    {
+        "name": "Секеричи",
+        "brokeDate": "1944",
+        "houseBeforeWar": "80",
+        "peopleBeforeWar": "312",
+        "brokeHouse": "76",
+        "peopleKills": "10"
+    },
+    {
+        "name": "Селище",
+        "brokeDate": "1943",
+        "houseBeforeWar": "87",
+        "peopleBeforeWar": "271",
+        "brokeHouse": "87",
+        "peopleKills": "5"
+    },
+    {
+        "name": "Селищи",
+        "brokeDate": "1943",
+        "houseBeforeWar": "78",
+        "peopleBeforeWar": "320",
+        "brokeHouse": "78",
+        "peopleKills": "46"
+    },
+    {
+        "name": "Скалка",
+        "brokeDate": "1944",
+        "houseBeforeWar": "116",
+        "peopleBeforeWar": "330",
+        "brokeHouse": "116",
+        "peopleKills": "3"
+    },
+    {
+        "name": "Славань",
+        "brokeDate": "1941",
+        "houseBeforeWar": "227",
+        "peopleBeforeWar": "938",
+        "brokeHouse": "212",
+        "peopleKills": "72"
+    },
+    {
+        "name": "Старина",
+        "brokeDate": "1943",
+        "houseBeforeWar": "19",
+        "peopleBeforeWar": "83",
+        "brokeHouse": "19",
+        "peopleKills": "0"
+    },
+    {
+        "name": "Стужки",
+        "brokeDate": "1944",
+        "houseBeforeWar": "45",
+        "peopleBeforeWar": "215",
+        "brokeHouse": "37",
+        "peopleKills": "18"
+    },
+    {
+        "name": "Судовица",
+        "brokeDate": "1944",
+        "houseBeforeWar": "70",
+        "peopleBeforeWar": "340",
+        "brokeHouse": "70",
+        "peopleKills": "0"
+    },
+    {
+        "name": "Теребулины",
+        "brokeDate": "1943",
+        "houseBeforeWar": "17",
+        "peopleBeforeWar": "67",
+        "brokeHouse": "17",
+        "peopleKills": "29"
+    },
+    {
+        "name": "Тумаровка",
+        "brokeDate": "1944",
+        "houseBeforeWar": "106",
+        "peopleBeforeWar": "467",
+        "brokeHouse": "86",
+        "peopleKills": "14"
+    },
+    {
+        "name": "Хутор",
+        "brokeDate": "1943",
+        "houseBeforeWar": "195",
+        "peopleBeforeWar": "772",
+        "brokeHouse": "195",
+        "peopleKills": "99"
+    },
+    {
+        "name": "Чернин",
+        "brokeDate": "1944",
+        "houseBeforeWar": "165",
+        "peopleBeforeWar": "672",
+        "brokeHouse": "162",
+        "peopleKills": "61"
+    },
+    {
+        "name": "Чирковичи",
+        "brokeDate": "1943",
+        "houseBeforeWar": "234",
+        "peopleBeforeWar": "1564",
+        "brokeHouse": "84",
+        "peopleKills": "0"
+    },
+    {
+        "name": "Чкалово (Кокуевичи)",
+        "brokeDate": "1943",
+        "houseBeforeWar": "123",
+        "peopleBeforeWar": "738",
+        "brokeHouse": "123",
+        "peopleKills": "23"
+    },
+    {
+        "name": "Шупейки",
+        "brokeDate": "1943",
+        "houseBeforeWar": "124",
+        "peopleBeforeWar": "399",
+        "brokeHouse": "124",
+        "peopleKills": "3"
+    },
+    {
+        "name": "Язвин",
+        "brokeDate": "1943",
+        "houseBeforeWar": "70",
+        "peopleBeforeWar": "280",
+        "brokeHouse": "70",
+        "peopleKills": "14"
+    },
+    {
+        "name": "Язвинцы",
+        "brokeDate": "1943",
+        "houseBeforeWar": "65",
+        "peopleBeforeWar": "229",
+        "brokeHouse": "65",
+        "peopleKills": "6"
+    }
+]
