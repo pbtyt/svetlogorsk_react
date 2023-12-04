@@ -27,12 +27,13 @@ const Header = ( {activeButtonIndex=0} ) => {
         isActive={activeButtonIndex===2}
       />
 
-      <HeaderButton 
+      {/* <HeaderButton 
         path="/svetlogorsk_react/game" 
         svg_path='./Header/game.svg' 
         buttonText='Викторина'
         isActive={activeButtonIndex===4}
-      />
+      /> */}
+
     </div>
   )
 }
