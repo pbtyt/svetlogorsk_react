@@ -5,11 +5,7 @@ const Footer = () => {
     <footer className={styles.footer}>
         
         <div className={styles.blockFooterWrapper}>
-            <div className={styles.contacts}>
-            </div>
-            
-            <div className={styles.spacer}></div>
-            
+          
             <div className={styles.authors}>
                 <h3>Автор (Учащийся 11А класса "Средняя школа №12 г.Светлогорска")</h3>
                 <h4>Бобченок Никита</h4>
