@@ -13,12 +13,12 @@ const Header = ( {activeButtonIndex=0} ) => {
         isActive={activeButtonIndex===1}
       />
 
-      <HeaderButton 
+{/*       <HeaderButton 
         path="/svetlogorsk_react/shatilki_cards" 
         svg_path='./Header/cards.svg' 
         buttonText='Шатилки, ушедшие в историю'
         isActive={activeButtonIndex===3}
-      />
+      /> */}
       
       <HeaderButton 
         path="/svetlogorsk_react/search" 
