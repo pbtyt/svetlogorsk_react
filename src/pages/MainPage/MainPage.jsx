@@ -14,7 +14,7 @@ const MainPage = () => {
                 <source src={videoBG} type="video/mp4"/>
             </video>
             <h1 className={styles.headerTitle}> Дорога памяти — Дорога славы </h1>
-            <p className={styles.headerSubtitle}>Светлогорщина с богатой историей</p>
+          {/* <p className={styles.headerSubtitle}>Светлогорщина с богатой историей</p> */}
         
             <a href="#main-top">
                 <img src="./chevron-down.svg" alt="chevron" />
