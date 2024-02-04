@@ -10,7 +10,7 @@ const History = () => {
     window.scrollTo(0, 0);
   return (
     <>
-        <Header activeButtonIndex={3}/>
+        <Header activeButtonIndex={4}/>
         <h1 style={{textAlign:"center", marginTop: "1.5rem"}}>
             Шатилки, ушедшие в историю
         </h1>

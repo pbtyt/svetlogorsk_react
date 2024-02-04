@@ -13,13 +13,6 @@ const Header = ( {activeButtonIndex=0} ) => {
         isActive={activeButtonIndex===1}
       />
 
-{/*       <HeaderButton 
-        path="/svetlogorsk_react/shatilki_cards" 
-        svg_path='./Header/cards.svg' 
-        buttonText='Шатилки, ушедшие в историю'
-        isActive={activeButtonIndex===3}
-      /> */}
-      
       <HeaderButton 
         path="/svetlogorsk_react/search" 
         svg_path='./Header/search.svg' 
@@ -27,12 +20,26 @@ const Header = ( {activeButtonIndex=0} ) => {
         isActive={activeButtonIndex===2}
       />
 
-      {/* <HeaderButton 
+      <HeaderButton
+        path='/svetlogorsk_react/person'
+        svg_path='./Header/person.svg'
+        buttonText='Изяслав Котляров'
+        isActive={activeButtonIndex===3}
+      />
+
+      <HeaderButton 
+        path="/svetlogorsk_react/shatilki_cards" 
+        svg_path='./Header/cards.svg' 
+        buttonText='Шатилки, ушедшие в историю'
+        isActive={activeButtonIndex===4}
+      />
+      
+      <HeaderButton 
         path="/svetlogorsk_react/game" 
         svg_path='./Header/game.svg' 
         buttonText='Викторина'
-        isActive={activeButtonIndex===4}
-      /> */}
+        isActive={activeButtonIndex===5}
+      />
 
     </div>
   )

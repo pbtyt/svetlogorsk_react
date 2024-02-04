@@ -1,0 +1,46 @@
+.info{
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.photo{
+    flex-shrink: 0;
+    width: 15%;
+    background-color: rgba(77, 76, 76, 0.85);
+}
+
+.photo img{
+    padding: .75rem;
+    width: 100%;
+}
+
+.poem{
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 8px;
+}
+
+.poem p{
+    font-weight: 400;
+    padding: .38rem;
+}
+
+.sectionTitle{
+    padding: .25rem;
+    border-top: 2px solid rgba(0, 0, 0, .75);
+    border-bottom: 2px solid rgba(0, 0, 0, .75);
+    font-weight: 500;
+}
+
+.paragraphWrapper{
+    margin: 1.55rem;
+    padding: .85rem;
+    background-color: rgba(0, 0, 0, .055);
+}
+
+.pharagraphText{
+    font-weight: 500;
+    font-size: 14px;
+}
