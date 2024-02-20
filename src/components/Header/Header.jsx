@@ -19,14 +19,14 @@ const Header = ( {activeButtonIndex=0} ) => {
         buttonText='Без срока давности'
         isActive={activeButtonIndex===2}
       />
-      {/*
+
       <HeaderButton
         path='/svetlogorsk_react/person'
         svg_path='./Header/person.svg'
         buttonText='Изяслав Котляров'
         isActive={activeButtonIndex===3}
       />
-      */}
+
       <HeaderButton 
         path="/svetlogorsk_react/shatilki_cards" 
         svg_path='./Header/cards.svg' 
