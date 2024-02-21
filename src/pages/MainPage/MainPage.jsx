@@ -10,19 +10,24 @@ const MainPage = () => {
   return (
     <>
         <header className={styles.header}>
+            <div className={styles.test}>
+                <Header activeButtonIndex={1}/>
+            </div>
             <video loop autoPlay muted className={styles.headerVideo}>
                 <source src={videoBG} type="video/mp4"/>
             </video>
-            <h1 className={styles.headerTitle}> Дорога памяти — Дорога славы </h1>
-            <p className={styles.headerSubtitle}>Светлогорщина с богатой историей</p>
+
+            <div className={styles.headerTitlesWrapper}>
+                <h1 className={styles.headerTitle}> Дорога памяти — Дорога славы </h1>
+                <p className={styles.headerSubtitle}>Светлогорщина с богатой историей</p>
+            </div>
         
-            <a href="#main-top">
+            <a className={styles.chevron} href="#main-top">
                 <img src="./chevron-down.svg" alt="chevron" />
             </a>
         </header>
 
         <main className={styles.main} id="main-top">
-            <Header activeButtonIndex={1}/>
             <div className={styles.container}>
                 <h2 className={styles.mainHeader}>
                     Времён связующая нить

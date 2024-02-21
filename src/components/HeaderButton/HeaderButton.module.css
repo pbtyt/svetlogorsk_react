@@ -6,26 +6,28 @@
     gap: .45rem;
     padding: 8px 15px;
 
-    /* background: #161616; */
-    color: #161616;
+    background: rgba(255, 255, 255, .45);
+    color: white;
     transition: all 300ms ease;
 
 }
 
-.buttonWrapper:hover{
-    background: #444343;
-    color:white;
-    transition: all 300ms ease;
-}
-
-.buttonWrapper:hover img{
-    transition: all 300ms ease;
-
+.buttonWrapper img{
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(228deg) brightness(110%) contrast(101%);
 }
 
+.buttonWrapper:hover{
+    background: #738d50;
+    color:white;
+    transition: all 300ms ease;
+}
+/* 
+.buttonWrapper:hover img{
+    transition: all 300ms ease;
+} */
+
 .activeButton{
-    background: #161616;
+    background: #607446;
     color: white;
 }
 

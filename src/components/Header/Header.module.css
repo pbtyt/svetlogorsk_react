@@ -7,10 +7,16 @@
     margin-top: 0.45rem;
     margin-bottom: 0.45rem;
 
+    align-self: center;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: .85rem;
+
+    background: rgba(4, 4, 4, .45);
+    padding: .75rem;
+    border-radius: 15px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px){
