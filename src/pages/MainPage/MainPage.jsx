@@ -10,13 +10,14 @@ const MainPage = () => {
   return (
     <>
         <header className={styles.header}>
-            <div className={styles.test}>
+            
+            <div className={styles.headerWrapper}>
                 <Header activeButtonIndex={1}/>
             </div>
             <video loop autoPlay muted className={styles.headerVideo}>
                 <source src={videoBG} type="video/mp4"/>
             </video>
-
+            <div style={{flexGrow: 1}}></div>
             <div className={styles.headerTitlesWrapper}>
                 <h1 className={styles.headerTitle}> Дорога памяти — Дорога славы </h1>
                 <p className={styles.headerSubtitle}>Светлогорщина с богатой историей</p>
