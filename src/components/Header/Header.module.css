@@ -44,6 +44,7 @@
 
     .buttonsWrapper{
         align-items: end;
+        align-self: end;
     }
 
     .menu{

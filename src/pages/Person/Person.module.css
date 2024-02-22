@@ -1,9 +1,9 @@
-.wrapper{
+.wrapper {
     display: flex;
     flex-direction: column;
 }
 
-.info{
+.info {
     margin: 3rem 0;
     display: flex;
     align-items: center;
@@ -11,41 +11,62 @@
     gap: 5rem;
 }
 
-.photo{
+.photo {
     flex-shrink: 0;
     width: 15%;
-    background-color: rgba(77, 76, 76, 0.85);
 }
 
-.photo img{
+.photo img {
     padding: .75rem;
     width: 100%;
 }
 
-.poem{
+.poem {
     background-color: rgba(255, 255, 255, 0.75);
     border-radius: 8px;
 }
 
-.poem p{
+.poem p {
     font-weight: 400;
     padding: .38rem;
 }
 
-.sectionTitle{
+.sectionTitle {
     padding: .25rem;
     border-top: 2px solid rgba(0, 0, 0, .75);
     border-bottom: 2px solid rgba(0, 0, 0, .75);
     font-weight: 500;
 }
 
-.paragraphWrapper{
+.paragraphWrapper {
     margin: 1.55rem;
     padding: .85rem;
     background-color: rgba(0, 0, 0, .055);
 }
 
-.pharagraphText{
+.pharagraphText {
     font-weight: 500;
     font-size: 14px;
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .photo{
+        width: 50%;
+        border-radius: 10px;
+        border: 2px solid #c3c3c3;
+    }
+
+    .info{
+        align-items: center;
+        flex-direction: column;
+        margin: 1rem;
+        gap: 1rem;
+    }
+
+    .poem p{
+        font-weight: 600;
+        padding: 1rem;
+    }
 }
