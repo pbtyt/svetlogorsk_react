@@ -17,7 +17,7 @@ const MainPage = () => {
             <video loop autoPlay muted className={styles.headerVideo}>
                 <source src={videoBG} type="video/mp4"/>
             </video>
-            <div style={{flexGrow: 0.1}}></div>
+            <div className={styles.spacer}></div>
             <div className={styles.headerTitlesWrapper}>
                 <h1 className={styles.headerTitle}> Дорога памяти — Дорога славы </h1>
                 <p className={styles.headerSubtitle}>Светлогорщина с богатой историей</p>
