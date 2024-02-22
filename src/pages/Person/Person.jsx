@@ -6,7 +6,7 @@ import Header from '../../components/Header/Header'
 const Person = () => {
     return (
         <div className={styles.wrapper}>
-            <Header activeButtonIndex={3}/>
+            <Header activeButtonIndex={3} bgColor='rgba(77, 76, 76, 0.85)'/>
 
             <h2 align="center" style={{marginTop: "1.2rem"}}>Изяслав Григорьевич Котляров</h2>
             <div className={styles.info}>

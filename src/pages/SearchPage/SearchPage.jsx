@@ -32,7 +32,7 @@ const SearchPage = () => {
     }, [searchValue, filterValue])
     return (
         <div className={styles.searchWrapper}>
-            <Header activeButtonIndex={2}/>
+            <Header activeButtonIndex={2} bgColor="#00886d"/>
             <div className={styles.searchInputWrapper}>
                 <input type="text" placeholder='Введите название...' value={searchValue} onChange={e => setSearchValue(e.target.value)} />
             </div>

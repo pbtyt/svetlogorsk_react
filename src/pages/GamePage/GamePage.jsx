@@ -17,7 +17,22 @@ const GamePage = () => {
     return gameData[currentQuestion]
         ? (
             <div className={styles.gameWrapper}>
-                {/* <Header activeButtonIndex={4}/> */}
+                <div className={styles.area}>
+                    <ul className={styles.circles}>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div >
+                <Header activeButtonIndex={5} bgColor='rgb(87 88 89)'/>
+                <div style={{ flexGrow: 0.3 }} ></div>
                 <div className={styles.gameContentWrapper}>
                     <h3 className={styles.questionTitle}>
                         Вопрос №{gameData[currentQuestion]?.id}
@@ -42,11 +57,12 @@ const GamePage = () => {
                         }
                     </div>
                 </div>
+                <div style={{ flexGrow: 1 }}></div>
             </div>
         )
         :
         (
-            <div className={styles.gameWrapper} style={{gap: "1rem"}}>
+            <div className={styles.gameWrapper} style={{ gap: "1rem" }}>
                 <div style={{ display: "flex", gap: ".45rem", alignItems: "center", flexDirection: "row" }}>
                     <h3>Количество правильных ответов: </h3>
                     <h4 style={{ fontWeight: "400" }}>
@@ -63,7 +79,7 @@ const GamePage = () => {
                         На главную
                     </button>
                 </Link>
-            </div>            
+            </div>
         )
 }
 
