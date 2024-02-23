@@ -1,7 +1,7 @@
 .wrapper {
     display: flex;
     flex-direction: column;
-    background-image: url('./IzaslavBG.png');
+    background-image: url('/svetlogorsk_react/IzaslavBG.png');
 }
 .info {
     margin: 1rem 0;
