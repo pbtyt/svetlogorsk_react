@@ -1,23 +1,26 @@
 .wrapper {
     display: flex;
     flex-direction: column;
+    background-image: url('./IzaslavBG.png');
 }
-
 .info {
-    margin: 3rem 0;
+    margin: 1rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5rem;
+    gap: 3rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    align-self: center;
+    background-color: rgba(158, 156, 156, 0.55);
 }
 
 .photo {
     flex-shrink: 0;
-    width: 15%;
+    max-width: 253px;
 }
 
 .photo img {
-    padding: .75rem;
     width: 100%;
 }
 
@@ -27,33 +30,39 @@
 }
 
 .poem p {
-    font-weight: 400;
+    font-weight: 500;
     padding: .38rem;
 }
 
 .sectionTitle {
     padding: .25rem;
-    border-top: 2px solid rgba(0, 0, 0, .75);
-    border-bottom: 2px solid rgba(0, 0, 0, .75);
-    font-weight: 500;
+    margin: 1.55rem;
+    /* border: 1px solid rgba(0, 0, 0, 1); */
+    font-weight: 700;
+    font-size: 24px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, .55);
+    color: white;
 }
 
 .paragraphWrapper {
     margin: 1.55rem;
     padding: .85rem;
-    background-color: rgba(0, 0, 0, .055);
+    background-color: rgba(0, 0, 0, .65);
+    border-radius: 10px;
 }
 
 .pharagraphText {
     font-weight: 500;
     font-size: 14px;
+    color: white;
 }
 
 
 
 @media screen and (min-width: 320px) and (max-width: 480px){
     .photo{
-        width: 50%;
+        max-width: 185px;
         border-radius: 10px;
         border: 2px solid #c3c3c3;
     }

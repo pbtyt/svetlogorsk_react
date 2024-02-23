@@ -9,7 +9,12 @@ const Person = () => {
             
             <Header activeButtonIndex={3} bgColor='rgba(77, 76, 76, 0.85)'/>
 
-            <h2 align="center" style={{marginTop: "1.2rem", marginBottom: "1.2rem"}}>Изяслав Григорьевич Котляров</h2>
+            <div style={{padding: '.7rem', background:'rgba(158, 156, 156, 0.55)', alignSelf: 'center', borderRadius: '7px', margin: '1rem', color: 'white'}}>
+                {/* style={{marginTop: "1.2rem", marginBottom: "1.2rem"}} */}
+                <h2 align="center">Изяслав Григорьевич Котляров</h2>
+            </div>
+            
+            
             <div className={styles.info}>
                 <div className={styles.photo}>
                     <img src="/svetlogorsk_react/Izaslav.jpg" alt="person" />

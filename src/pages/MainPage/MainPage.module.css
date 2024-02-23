@@ -1,6 +1,10 @@
+.header > *{
+	flex-grow: 1;
+}
+
 .headerWrapper{
 	align-self: center;
-	flex-grow: 0;
+	flex-grow: 0.65;
 }
 
 .header{
@@ -28,10 +32,6 @@
 	width: 100%;
 	height: 100%;
 	background: rgba(0, 0, 0, 0.25);
-}
-
-.header > *{
-	flex-grow: 1;
 }
 
 .spacer{
@@ -95,7 +95,7 @@
 	}
 	
 	.spacer{
-		flex-grow: 1;
+		flex-grow: .65;
 	}
 
 	.headerTitle{
