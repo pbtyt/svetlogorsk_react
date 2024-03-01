@@ -4,6 +4,8 @@ import styles from './Person.module.css'
 import Header from '../../components/Header/Header'
 
 const Person = () => {
+    window.scrollTo(0,0)
+
     return (
         <div className={styles.wrapper}>
             

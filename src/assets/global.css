@@ -33,6 +33,9 @@ input{
 }
 
 
+input[type=checkbox]{
+	cursor: pointer;
+}
 @media screen and (min-width: 320px) and (max-width: 480px){
 	/*#root{
 		width: calc(100% - 7px);

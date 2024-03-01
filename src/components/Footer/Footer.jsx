@@ -17,7 +17,7 @@ const Footer = () => {
         <div style={{borderTop: "1px solid rgba(66,66,66,.20)", margin: "20px 0px"}}></div>
         <div>
             <h5 style={{textAlign: "center", fontWeight: "500", color: "black", fontSize: '9px'}}>
-                © 2023 - 2023 All rights reserved
+                © 2023 - 2024 All rights reserved
             </h5>
         </div>
     </footer>
