@@ -20,7 +20,7 @@ const MainPage = () => {
             <div className={styles.spacer}></div>
             <div className={styles.headerTitlesWrapper}>
                 <h1 className={styles.headerTitle}> Дорога памяти — Дорога славы </h1>
-                <p className={styles.headerSubtitle}>Светлогорщина с богатой историей</p>
+                {/* <p className={styles.headerSubtitle}>Светлогорщина с богатой историей</p> */}
             </div>
         
             <a className={styles.chevron} href="#main-top">

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import styles from './SearchPage.module.css'
 
 import villageData from '../../data/villages.json'
@@ -9,11 +9,18 @@ import TableRow from '../../components/TableRow/TableRow'
 
 const SearchPage = () => {
     const [searchValue, setSearchValue] = useState('')
-    const [filterValue, setFilterValue] = useState({ "": "dec" })
+    const [filterValue, setFilterValue] = useState({ "brokeDate": "inc" })
     const [isOpen, setIsOpen] = useState(false)
     const [data, setData] = useState([])
     const [filterType, setFilterType] = useState("inc")
-    const [isChecked, setIsChecked] = useState(true);
+    const [isCheckedFirst, setIsCheckedFirst] = useState(true);
+    const [isCheckedSecond, setIsCheckedSecond] = useState(false);
+    
+    const setCheckboxState = (filterType = "inc", firstState = true, secondState = false) => {
+        // setFilterType(filterType);
+        setIsCheckedFirst(firstState);
+        setIsCheckedSecond(secondState);
+    }; 
 
     window.scrollTo(0, 0);
 
@@ -44,7 +51,7 @@ const SearchPage = () => {
                     <button 
                         onClick={() => setIsOpen(!isOpen)} 
                         style={{ padding: '.5rem 2rem', backgroundColor: '#d6d4d4', color: 'black', fontWeight: '500', borderRadius: '10px' }} >
-                            Сортировать по: 
+                            Сортировать по:
                     </button>
                     {isOpen &&
                         (
@@ -91,11 +98,30 @@ const SearchPage = () => {
                 
                 <div className="checkboxes">
                     <div className="checkbox" style={{display: 'flex', gap: '.45rem'}}>
-                        <input type="checkbox" checked={isChecked} onClick={()=>{setFilterType("inc"); setIsChecked(!isChecked)}}/>
+                        <input type="checkbox" checked={isCheckedFirst} onClick={()=>{
+                            setCheckboxState("inc", !isCheckedFirst, false);
+                            setFilterType("inc");
+                            
+                            setFilterValue(prev => {
+                                return {[Object.keys(prev)[0]]: "inc"};
+                            })
+
+                            console.log(filterValue);}
+                        }/>
                         <h5>Возрастание</h5>
                     </div>
                     <div className="checkbox" style={{display: 'flex', gap: '.45rem'}}>
-                        <input type="checkbox" checked={!isChecked} onClick={()=>{setFilterType("dec"); setIsChecked(!isChecked)}}/>
+                        <input type="checkbox" checked={isCheckedSecond} onClick={()=>{
+                            setCheckboxState("dec", false, !isCheckedSecond);
+                            setFilterType("dec");
+                            
+                            setFilterValue(prev => {
+                                return {[Object.keys(prev)[0]]: "dec"};
+                            })
+
+                            
+                            console.log(filterValue);}
+                        }/>
                         <h5>Убывание</h5>
                     </div>
                 </div>
@@ -113,44 +139,19 @@ const SearchPage = () => {
                                 Название
                             </th>
                             <th>
-                                <div style={{ display: "flex", gap: ".5rem", padding: ".3rem", alignItems: "center", justifyContent: "center" }}>
-                                    Год Разрушения
-                                    {/* !!!FILTER */}
-                                    <button style={{ background: "none", color: "white", fontWeight: "600", fontSize: "16px" }} onClick={() => { setFilterValue({ "brokeDate": "inc" }) }} >^</button>
-                                    <button style={{ rotate: "Z 180deg", background: "none", color: "white", fontWeight: "600", fontSize: "16px" }} onClick={() => { setFilterValue({ "brokeDate": "dec" }) }} >^</button>
-                                </div>
+                                Год Разрушения
                             </th>
                             <th>
-                                <div style={{ display: "flex", gap: ".5rem", padding: ".3rem", alignItems: "center", justifyContent: "center" }}>
-                                    Домов до войны
-                                    {/* !!!FILTER */}
-                                    <button style={{ background: "none", color: "white", fontWeight: "600", fontSize: "16px" }} onClick={() => { setFilterValue({ "houseBeforeWar": "inc" }) }} >^</button>
-                                    <button style={{ rotate: "Z 180deg", background: "none", color: "white", fontWeight: "600", fontSize: "16px" }} onClick={() => { setFilterValue({ "houseBeforeWar": "dec" }) }} >^</button>
-                                </div>
+                                Домов до войны
                             </th>
                             <th>
-                                <div style={{ display: "flex", gap: ".5rem", padding: ".3rem", alignItems: "center", justifyContent: "center" }}>
-                                    Людей до войны
-                                    {/* !!!FILTER */}
-                                    <button style={{ background: "none", color: "white", fontWeight: "600", fontSize: "16px" }} onClick={() => { setFilterValue({ "peopleBeforeWar": "inc" }) }} >^</button>
-                                    <button style={{ rotate: "Z 180deg", background: "none", color: "white", fontWeight: "600", fontSize: "16px" }} onClick={() => { setFilterValue({ "peopleBeforeWar": "dec" }) }} >^</button>
-                                </div>
+                                Людей до войны
                             </th>
                             <th>
-                                <div style={{ display: "flex", gap: ".5rem", padding: ".3rem", alignItems: "center", justifyContent: "center" }}>
-                                    Разрушено Домов
-                                    {/* !!!FILTER */}
-                                    <button style={{ background: "none", color: "white", fontWeight: "600", fontSize: "16px" }} onClick={() => { setFilterValue({ "brokeHouse": "inc" }) }} >^</button>
-                                    <button style={{ rotate: "Z 180deg", background: "none", color: "white", fontWeight: "600", fontSize: "16px" }} onClick={() => { setFilterValue({ "brokeHouse": "dec" }) }} >^</button>
-                                </div>
+                                Разрушено Домов
                             </th>
                             <th>
-                                <div style={{ display: "flex", gap: ".5rem", padding: ".3rem", alignItems: "center", justifyContent: "center" }}>
-                                    Убито людей
-                                    {/* !!!FILTER */}
-                                    <button style={{ background: "none", color: "white", fontWeight: "600", fontSize: "16px" }} onClick={() => { setFilterValue({ "peopleKills": "inc" }) }} >^</button>
-                                    <button style={{ rotate: "Z 180deg", background: "none", color: "white", fontWeight: "600", fontSize: "16px" }} onClick={() => { setFilterValue({ "peopleKills": "dec" }) }} >^</button>
-                                </div>
+                                Убито людей
                             </th>
                         </tr>
                     </thead>
