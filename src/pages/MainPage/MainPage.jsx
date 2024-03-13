@@ -14,7 +14,7 @@ const MainPage = () => {
             <div className={styles.headerWrapper}>
                 <Header activeButtonIndex={1}/>
             </div>
-            <video loop autoPlay muted className={styles.headerVideo} controls={false}>
+            <video loop autoPlay muted className={styles.headerVideo} controls={false} playsinline>
                 <source src={videoBG} type="video/mp4"/>
             </video>
             <div className={styles.spacer}></div>
