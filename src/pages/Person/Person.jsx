@@ -77,13 +77,13 @@ const Person = () => {
 
             <div className={styles.books}>
                 <div className={styles.book}>
-                    <img src="./izislav1.png" alt="book" />
+                    <img src="/svetlogorsk_react/izislav1.png" alt="book" />
                 </div>
                 <div className={styles.book}>
-                    <img src="./izislav2.png" alt="book" />
+                    <img src="/svetlogorsk_react/izislav2.png" alt="book" />
                 </div>
                 <div className={styles.book}>
-                    <img src="./izislav3.png" alt="book" />
+                    <img src="/svetlogorsk_react/izislav3.png" alt="book" />
                 </div>
             </div>
 
@@ -102,7 +102,7 @@ const Person = () => {
 
             <div className={styles.video}>
                 <div className={styles.photowpre}>
-                    <img src="./preizislav.png" alt="president and izislav" />
+                    <img src="/svetlogorsk_react/preizislav.png" alt="president and izislav" />
                 </div>
 
                 <iframe className={styles.iframe} width="600" height="350" src="https://www.youtube.com/embed/XaKf8SM6-YU" allowFullScreen></iframe>
