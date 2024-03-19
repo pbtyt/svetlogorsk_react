@@ -64,7 +64,41 @@
     color: white;
 }
 
+.books{
+    display: flex;
+    justify-content: space-evenly;
+}
 
+.book{
+    width: 400px;
+    height: 450px;
+}
+
+.book img{
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 536px;
+}
+
+.photowpre{
+    border-radius: 10px;
+    padding: 2rem;
+    background:rgba(158, 156, 156, 0.55);
+}
+
+.photowpre img{
+    width: 500px;
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+}
 
 @media screen and (min-width: 320px) and (max-width: 480px){
     .photo{
@@ -83,5 +117,29 @@
     .poem p{
         font-weight: 600;
         padding: 1rem;
+    }
+
+    .books{
+        display: grid;
+        overflow-x: scroll;
+        grid-auto-columns: minmax(80%, 1fr);
+        grid-auto-flow: column;
+        grid-template-columns: unset;
+    }
+    .video{
+        gap: 2rem;
+        flex-direction: column;
+    }
+
+    .photowpre{
+        padding: .5rem;
+    }
+
+    .photowpre img{
+        width: 350px;
+    }
+
+    .iframe{
+        width: 365px;
     }
 }

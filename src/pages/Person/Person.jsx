@@ -4,19 +4,19 @@ import styles from './Person.module.css'
 import Header from '../../components/Header/Header'
 
 const Person = () => {
-    window.scrollTo(0,0)
+    window.scrollTo(0, 0)
 
     return (
         <div className={styles.wrapper}>
-            
-            <Header activeButtonIndex={3} bgColor='rgba(77, 76, 76, 0.85)'/>
 
-            <div style={{padding: '.7rem', background:'rgba(158, 156, 156, 0.55)', alignSelf: 'center', borderRadius: '7px', margin: '1rem', color: 'white'}}>
+            <Header activeButtonIndex={3} bgColor='rgba(77, 76, 76, 0.85)' />
+
+            <div style={{ padding: '.7rem', background: 'rgba(158, 156, 156, 0.55)', alignSelf: 'center', borderRadius: '7px', margin: '1rem', color: 'white' }}>
                 {/* style={{marginTop: "1.2rem", marginBottom: "1.2rem"}} */}
                 <h2 align="center">Изяслав Григорьевич Котляров</h2>
             </div>
-            
-            
+
+
             <div className={styles.info}>
                 <div className={styles.photo}>
                     <img src="/svetlogorsk_react/Izaslav.jpg" alt="person" />
@@ -74,8 +74,42 @@ const Person = () => {
                     </p>
                 </div>
             </div>
+
+            <div className={styles.books}>
+                <div className={styles.book}>
+                    <img src="./izislav1.png" alt="book" />
+                </div>
+                <div className={styles.book}>
+                    <img src="./izislav2.png" alt="book" />
+                </div>
+                <div className={styles.book}>
+                    <img src="./izislav3.png" alt="book" />
+                </div>
+            </div>
+
+            <div className={styles.rewards}>
+                <h3 align="center" className={styles.sectionTitle}>Награды и звания</h3>
+                <div className={styles.paragraphWrapper}>
+                    <p className={styles.pharagraphText}>
+                        Лауреат премии Президента Республики Беларусь «За духоўнае адраджэнне» (2020). Награждён нагрудным знаком Министерства культуры РБ «За ўклад у развіццё культуры Беларусі», Почётными грамотами Совета министров Республики Беларусь, Министерства культуры Республики Беларусь, Республиканского комитета по печати, нагрудным знаком Международного Союза писателей и мастеров искусств «Почётный наставник творческой молодёжи» и нагрудным знаком Гомельского областного отделения Союза писателей Беларуси «За ўклад у літаратуру», Почётными грамотами Гомельского облисполкома и другими.
+                        Награждён памятной медалью Минского благотворительного фонда имени участника Великой Отечественной войны З.Г. Колобанова и медалью «115 лет с дня рождения Героя Советского Союза А. И. Лизюкова» Воронежской общественной организации «Наше общее дело».
+                        Лауреат 1-й степени Международного литературного конкурса «Русский Stil-2013» в номинации «Поэзия» (Германия).
+                        Лауреат литературной премии имени Кирилла Туровского Гомельского облисполкома в номинации «Поэзия» за сборник «Моё духовное пространство» (2021).
+                        Звания «Почётный гражданин г. Светлогорска» удостоен в 2001 году.
+                    </p>
+                </div>
+            </div>
+
+            <div className={styles.video}>
+                <div className={styles.photowpre}>
+                    <img src="./preizislav.png" alt="president and izislav" />
+                </div>
+
+                <iframe className={styles.iframe} width="600" height="350" src="https://www.youtube.com/embed/XaKf8SM6-YU" allowFullScreen></iframe>
+            </div>
         </div>
     )
+
 }
 
 export default Person
