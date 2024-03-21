@@ -16,6 +16,8 @@ const SearchPage = () => {
     const [isCheckedFirst, setIsCheckedFirst] = useState(true);
     const [isCheckedSecond, setIsCheckedSecond] = useState(false);
     
+    const [filterTitle, setFilterTitle] = useState("");
+
     const setCheckboxState = (filterType = "inc", firstState = true, secondState = false) => {
         // setFilterType(filterType);
         setIsCheckedFirst(firstState);
@@ -37,7 +39,33 @@ const SearchPage = () => {
             if (!isInc)
                 setData(prevData => prevData.reverse())
         }
+
+        switch(Object.keys(filterValue)[0])
+        {
+            case "brokeDate":
+                setFilterTitle("году разрушения");
+                break;
+
+            case "houseBeforeWar":
+                setFilterTitle("кол-ву домов до войны");
+                break;
+            
+            case "peopleBeforeWar":
+                setFilterTitle("кол-ву людей до войны");
+                break;
+
+            case "brokeHouse":
+                setFilterTitle("кол-ву разрушененных домов");
+                break;
+
+            case "peopleKills":
+                setFilterTitle("кол-ву убитых людей");
+                break;
+            
+            default: break;
+        }
     }, [searchValue, filterValue])
+
     return (
         <div className={styles.searchWrapper}>
             <Header activeButtonIndex={2} bgColor="#00886d" />
@@ -48,10 +76,10 @@ const SearchPage = () => {
             <div className={styles.filter} style={{ margin: '1rem 0rem', display: 'flex', gap: '1rem' }}>
 
                 <div className={styles.dropdown} style={{cursor: 'pointer'}}>
-                    <button 
+                    <button
                         onClick={() => setIsOpen(!isOpen)} 
                         style={{ padding: '.5rem 2rem', backgroundColor: '#d6d4d4', color: 'black', fontWeight: '500', borderRadius: '10px' }} >
-                            Сортировать по:
+                            Сортировать по: {filterTitle}
                     </button>
                     {isOpen &&
                         (
