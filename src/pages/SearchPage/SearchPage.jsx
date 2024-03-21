@@ -19,7 +19,6 @@ const SearchPage = () => {
     const [filterTitle, setFilterTitle] = useState("");
 
     const setCheckboxState = (filterType = "inc", firstState = true, secondState = false) => {
-        // setFilterType(filterType);
         setIsCheckedFirst(firstState);
         setIsCheckedSecond(secondState);
     }; 
@@ -125,8 +124,10 @@ const SearchPage = () => {
                 </div>
                 
                 <div className="checkboxes">
-                    <div className="checkbox" style={{display: 'flex', gap: '.45rem'}}>
+                    <div className={styles.checkbox}>
                         <input type="checkbox" checked={isCheckedFirst} onClick={()=>{
+                            if(isCheckedFirst && !isCheckedSecond) return;
+
                             setCheckboxState("inc", !isCheckedFirst, false);
                             setFilterType("inc");
                             
@@ -138,8 +139,10 @@ const SearchPage = () => {
                         }/>
                         <h5>Возрастание</h5>
                     </div>
-                    <div className="checkbox" style={{display: 'flex', gap: '.45rem'}}>
+                    <div className={styles.checkbox}>
                         <input type="checkbox" checked={isCheckedSecond} onClick={()=>{
+                            if(isCheckedSecond && !isCheckedFirst) return;
+
                             setCheckboxState("dec", false, !isCheckedSecond);
                             setFilterType("dec");
                             
